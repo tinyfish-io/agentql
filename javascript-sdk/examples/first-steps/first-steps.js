@@ -36,16 +36,16 @@ async function main() {
 
   await agentqlPage.goto(URL);
 
-  const productData = await _extractProductData(agentqlPage, 'fish');
+  const productData = await extractProductData(agentqlPage, 'fish');
 
   console.log(productData);
 
-  await _addQwilfishToCart(agentqlPage);
+  await addQwilfishToCart(agentqlPage);
 
   await browser.close();
 }
 
-async function _extractProductData(page, searchKeyWord) {
+async function extractProductData(page, searchKeyWord) {
   // Find DOM element using AgentQL API's queryElements() method
   const response = await page.queryElements(SEARCH_BOX_QUERY);
 
@@ -59,7 +59,7 @@ async function _extractProductData(page, searchKeyWord) {
   return data;
 }
 
-async function _addQwilfishToCart(page) {
+async function addQwilfishToCart(page) {
   // Find DOM element using AgentQL API's getByPrompt() method
   const qwilfishPageBtn = await page.getByPrompt(NATURAL_LANGUAGE_PROMPT);
 
