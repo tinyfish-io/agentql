@@ -36,3 +36,5 @@ logs/
 tmp/
 
 *env.local
+
+javascript-sdk/node_modules
