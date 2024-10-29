@@ -4,7 +4,6 @@ const path = require('path');
 const fs = require('fs');
 
 (async () => {
-
   const browser = await chromium.launch({ headless: false });
   const page = wrap(await browser.newPage()); // Wraps the Playwright Page to access AgentQL's features.
 
