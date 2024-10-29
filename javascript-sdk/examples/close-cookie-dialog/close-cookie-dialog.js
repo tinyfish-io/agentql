@@ -1,12 +1,7 @@
-const { wrap, configure } = require('agentql');
+const { wrap } = require('agentql');
 const { chromium } = require('playwright');
 
-require('dotenv').config();
-
 (async () => {
-  // Set the AgentQL API key via the `configure` method.
-  configure({ apiKey: process.env.AGENTQL_API_KEY });
-
   const browser = await chromium.launch({ headless: false });
   const page = wrap(await browser.newPage()); // Wraps the Playwright Page to access AgentQL's features.
 
