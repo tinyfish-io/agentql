@@ -5,7 +5,7 @@ This example demonstrates how to close popup windows (like promotion form) with 
 ## Run the script
 
 - [Install AgentQL SDK](https://docs.agentql.com/javascript-sdk/installation)
-- Save this javascript file locally as **close-popup.js**
+- Save this JavaScript file locally as **close-popup.js**
 - Run the following command from the project's folder:
 
 ```bash
