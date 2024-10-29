@@ -3,7 +3,7 @@ const { chromium } = require('playwright');
 
 (async () => {
   // Set the AgentQL API key via the `configure` method.
-  configure({ apiKey: 'IQfvaXYh_eD7zn7PP6e5bmtdAauUiV7xSyBqaJ0yFKcaN_q8A6z74Q' });
+  configure({ apiKey: 'YOUR_API_KEY' });
 
   const browser = await chromium.launch({ headless: false });
   const page = wrap(await browser.newPage()); // Wraps the Playwright Page to access AgentQL's features.
