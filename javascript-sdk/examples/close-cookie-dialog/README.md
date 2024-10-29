@@ -5,7 +5,7 @@ This example demonstrates how to use AgentQL close a site's dialog for rejecting
 ## Run the script
 
 - [Install AgentQL SDK](https://docs.agentql.com/javascript-sdk/installation)
-- Save this js file locally as **close-cookie-dialog.js**
+- Save this JavaScript file locally as **close-cookie-dialog.js**
 - Run the following command from the project's folder:
 
 ```bash
