@@ -2,7 +2,6 @@
 
 This example demonstrates how to query a list of items on the page.
 
-
 ## Run the script
 
 - [Install AgentQL SDK](https://agentql-docs-opvm8e9cd-tiny-fish.vercel.app/javascript-sdk/installation)
