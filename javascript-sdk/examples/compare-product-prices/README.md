@@ -4,8 +4,8 @@ This example demonstrates how to compare product prices across websites with que
 
 ## Run the script
 
-- [Install AgentQL SDK](https://agentql-docs-opvm8e9cd-tiny-fish.vercel.app/javascript-sdk/installation)
-- Save this javascript file locally as **compare-product-prices.js**
+- [Install AgentQL SDK](https://docs.agentql.com/javascript-sdk/installation)
+- Save this Javascript file locally as **compare-product-prices.js**
 - Run the following command from the project's folder:
 
 ```bash
