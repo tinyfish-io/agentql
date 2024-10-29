@@ -5,7 +5,7 @@ This is an example of collecting pricing data from e-commerce website using Agen
 ## Run the script
 
 - [Install AgentQL SDK](https://docs.agentql.com/javascript-sdk/installation)
-- Save this python file locally as **collect_pricing_data.js**
+- Save this JavaScript file locally as **collect_pricing_data.js**
 - Run the following command from the project's folder:
 
 ```bash
