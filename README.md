@@ -23,13 +23,13 @@ AgentQL is an AI-powered query language for scraping web sites and automating wo
 
 ### Features
 
-* **Python and Playwright** [AgentQL's Python SDK](https://docs.agentql.com/installation/sdk-installation) seamlessly integrates with Playwright for advanced automation and testing.
-* **Cross-site compatibility** lets you use the same query across different sites with similar content.
-* **Structured output** defined by the shape of your query.
-* **Natural language selectors** find elements and data anywhere on a site using intuitive queries.
-* **Transforms _and_ extracts** data in your queries.
-* **Works on any page,** public or private, any site, any URL, even behind authentication.
-* **Resiliance to UI changes** means queries work regardless of how a page's structure changes over time.
+- **Python and Playwright** [AgentQL's Python SDK](https://docs.agentql.com/installation/sdk-installation) seamlessly integrates with Playwright for advanced automation and testing.
+- **Cross-site compatibility** lets you use the same query across different sites with similar content.
+- **Structured output** defined by the shape of your query.
+- **Natural language selectors** find elements and data anywhere on a site using intuitive queries.
+- **Transforms _and_ extracts** data in your queries.
+- **Works on any page,** public or private, any site, any URL, even behind authentication.
+- **Resiliance to UI changes** means queries work regardless of how a page's structure changes over time.
 
 ### Tools
 
@@ -42,18 +42,18 @@ AgentQL is an AI-powered query language for scraping web sites and automating wo
 
 1. Install Python SDK and dependencies via your terminal:
 
-  ```bash
-  pip3 install agentql
-  agentql init
-  ```
+```bash
+pip3 install agentql
+agentql init
+```
 
 2. Copy and paste [your API key](https://docs.agentql.com/dev) into the terminal.
 
 3. Save one of the following scripts as **example.py** and run the following from your terminal:
 
-  ```bash
-  python3 example.py
-  ```
+```bash
+python3 example.py
+```
 
 ## Example Scripts
 
