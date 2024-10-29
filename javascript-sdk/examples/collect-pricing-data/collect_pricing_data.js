@@ -1,8 +1,8 @@
-const { wrap, configure } = require("agentql");
-const { chromium } = require("playwright");
-require("dotenv").config({ path: ".env.local" });
+const { wrap, configure } = require('agentql');
+const { chromium } = require('playwright');
+require('dotenv').config({ path: '.env.local' });
 
-const URL = "https://www.bestbuy.com";
+const URL = 'https://www.bestbuy.com';
 
 async function doExtractPricingData(page) {
   //Extract pricing data from the current page.
@@ -23,28 +23,28 @@ async function doExtractPricingData(page) {
 }
 
 async function searchProduct(page, product, minPrice, maxPrice) {
-  const searchInput = await page.getByPrompt("the search input field");
+  const searchInput = await page.getByPrompt('the search input field');
   if (!searchInput) {
-    console.log("Search input field not found.");
+    console.log('Search input field not found.');
     return false;
   }
   await searchInput.type(product, { delay: 200 });
-  await searchInput.press("Enter");
+  await searchInput.press('Enter');
 
-  const minPriceInput = await page.getByPrompt("the min price input field");
+  const minPriceInput = await page.getByPrompt('the min price input field');
   if (!minPriceInput) {
-    console.log("Min price input field not found.");
+    console.log('Min price input field not found.');
     return false;
   }
   await minPriceInput.fill(String(minPrice));
 
-  const maxPriceInput = await page.getByPrompt("the max price input field");
+  const maxPriceInput = await page.getByPrompt('the max price input field');
   if (!maxPriceInput) {
-    console.log("Max price input field not found.");
+    console.log('Max price input field not found.');
     return false;
   }
   await maxPriceInput.fill(String(maxPrice));
-  await maxPriceInput.press("Enter");
+  await maxPriceInput.press('Enter');
   return true;
 }
 
@@ -56,14 +56,14 @@ async function goToTheNextPage(page) {
             next_page_url
         }
     }`;
-  console.log("Navigating to the next page...");
+  console.log('Navigating to the next page...');
   const pagination = await page.queryData(nextPageQuery);
   let nextPageUrl = pagination.pagination?.next_page_url;
   if (!nextPageUrl) {
     return false;
   }
   try {
-    if (!nextPageUrl.startsWith("http")) {
+    if (!nextPageUrl.startsWith('http')) {
       nextPageUrl = URL + nextPageUrl;
     }
     await page.goto(nextPageUrl);
@@ -74,18 +74,10 @@ async function goToTheNextPage(page) {
   }
 }
 
-async function extractPricingData(
-  page,
-  product,
-  minPrice,
-  maxPrice,
-  maxPages = 3
-) {
-  console.log(
-    `Searching for product: ${product} with price range: $${minPrice} - $${maxPrice}`
-  );
+async function extractPricingData(page, product, minPrice, maxPrice, maxPages = 3) {
+  console.log(`Searching for product: ${product} with price range: $${minPrice} - $${maxPrice}`);
   if (!(await searchProduct(page, product, minPrice, maxPrice))) {
-    console.log("Failed to search for the product.");
+    console.log('Failed to search for the product.');
     return [];
   }
 
@@ -99,7 +91,7 @@ async function extractPricingData(
     pricingData.push(...pricingDataOnPage);
 
     if (!(await goToTheNextPage(page))) {
-      console.log("No more next page.");
+      console.log('No more next page.');
       break;
     }
 
@@ -114,8 +106,8 @@ async function extractPricingData(
   const page = wrap(await browser.newPage());
   await page.goto(URL);
 
-  const pricingData = await extractPricingData(page, "gpu", 500, 800);
-  console.log("Pricing data:", pricingData);
+  const pricingData = await extractPricingData(page, 'gpu', 500, 800);
+  console.log('Pricing data:', pricingData);
 
   await browser.close();
 })();
