@@ -5,7 +5,7 @@ This is an example shows how to login into websites by retrieving and interactin
 ## Run the script
 
 - [Install AgentQL SDK](https://docs.agentql.com/javascript-sdk/installation)
-- Save this javascript file locally as **log-into-sites.js**
+- Save this JavaScript file locally as **log-into-sites.js**
 - Run the following command from the project's folder:
 
 ```bash
