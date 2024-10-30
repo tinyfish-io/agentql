@@ -1,6 +1,6 @@
 /* This example demonstrates how to run the script in a headless browser. */
 
-const { wrap, configure } = require('agentql');
+const { wrap } = require('agentql');
 const { chromium } = require('playwright');
 
 // Define the URL of the page to scrape.
@@ -20,28 +20,24 @@ const STOCK_NUMBER_QUERY = `
 `;
 
 (async () => {
-  // Set the AgentQL API key via the `configure` method.
-  configure({ apiKey: process.env.AGENTQL_API_KEY });
-
   // Launch a headless browser using Playwright.
   const browser = await chromium.launch({ headless: true });
+  const normalPage = await browser.newPage();
+  await normalPage.goto(URL);
 
-  // Wrap a new page to use the AgentQL API.
-  const page = wrap(await browser.newPage());
+  // Wrap a new page instance to use with AgentQL API
+  const wrappedPage = wrap(normalPage);
 
-  await page.goto(URL);
-
-  let response;
   // Use queryElements() method to locate the search box from the page.
-  response = await page.queryElements(SEARCH_QUERY);
+  const searchResponse = await wrappedPage.queryElements(SEARCH_QUERY);
 
   // Use Playwright's API to fill the search box and press Enter.
-  await response.search_products_box.type('Charmander');
-  page.keyboard.press('Enter');
+  await searchResponse.search_products_box.type('Charmander');
+  await normalPage.keyboard.press('Enter');
 
-  // Use queryData() method to fetch the stock number from the page.
-  response = await page.queryData(STOCK_NUMBER_QUERY);
-  console.log(response);
+  // Use queryData() method to locate the stock number from the page.
+  const stockResponse = await wrappedPage.queryData(STOCK_NUMBER_QUERY);
+  console.log(stockResponse);
 
   await browser.close();
 })();
