@@ -62,7 +62,4 @@ async function getPriceAcrossWebsites() {
   await browser.close();
 }
 
-// Set the AgentQL API key via the `configure` method.
-configure({ apiKey: process.env.AGENTQL_API_KEY });
-
 getPriceAcrossWebsites();
