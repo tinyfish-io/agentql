@@ -35,7 +35,7 @@ const STOCK_NUMBER_QUERY = `
   await searchResponse.search_products_box.type('Charmander');
   await normalPage.keyboard.press('Enter');
 
-  // Use queryData() method to locate the stock number from the page.
+  // Use queryData() method to fetch the stock number from the page.
   const stockResponse = await wrappedPage.queryData(STOCK_NUMBER_QUERY);
   console.log(stockResponse);
 
