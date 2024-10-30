@@ -21,6 +21,7 @@ Install the [AgentQL Debugger Chrome extension](https://docs.agentql.com/install
 This is an example shows how to interact with external or existing browser by retrieving and interacting with web elements in AgentQL.
 
 ## Run the script
+
 - Install AgentQL SDK
 - Save this JS file locally as interact-with-external-or-existing-browser.js
 - Close your Google Chrome application if it is open.
@@ -51,4 +52,5 @@ node interact-with-external-or-existing-browser.js
 If you want to learn how to work with open pages, navigate to Viator website within the browser, and use fetch_data_from_open_website_page() method in the script to fetch data from the page.
 
 ## Play with the query
+
 Install the AgentQL Debugger Chrome extension to play with the AgentQL query. Learn more about the AgentQL query language

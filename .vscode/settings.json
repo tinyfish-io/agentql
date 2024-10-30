@@ -22,9 +22,7 @@
   ],
   "editor.formatOnSave": true,
   "files.insertFinalNewline": true,
-  "black-formatter.args": [
-    "--line-length=100"
-  ],
+  "black-formatter.args": ["--line-length=100"],
   "isort.args": [
     "--line-length=100",
     "--wrap-length=100",
@@ -33,9 +31,7 @@
     "--profile=black"
   ],
   "pylint.importStrategy": "fromEnvironment",
-  "pylint.args": [
-    "--rcfile=.pylintrc"
-  ],
+  "pylint.args": ["--rcfile=.pylintrc"],
   "python.analysis.typeCheckingMode": "standard",
   "editor.rulers": [100]
 }

@@ -6,6 +6,6 @@
     "ms-python.isort",
     "ms-python.pylint",
     "dbaeumer.vscode-eslint",
-    "yoavbls.pretty-ts-errors",
+    "yoavbls.pretty-ts-errors"
   ]
 }

@@ -1,9 +1,9 @@
 const { wrap, configure } = require('agentql');
 const { chromium } = require('playwright');
 
-const WEBSOCKET_URL = "http://localhost:9222"
+const WEBSOCKET_URL = 'http://localhost:9222';
 
-const URL = "https://scrapeme.live/shop";
+const URL = 'https://scrapeme.live/shop';
 
 const SEARCH_QUERY = `
 {
@@ -23,10 +23,10 @@ async function interactWithNewPageInLocalBrowser() {
   const page = wrap(await browser.contexts()[0].newPage());
 
   await page.goto(URL);
-  
+
   const response = await page.queryElements(SEARCH_QUERY);
-  await response.search_products_box.type("Charmander");
-  await page.keyboard.press("Enter");
+  await response.search_products_box.type('Charmander');
+  await page.keyboard.press('Enter');
 
   await page.waitForTimeout(10000);
 

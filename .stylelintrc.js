@@ -1,3 +1,3 @@
 module.exports = {
-  extends: 'stylelint-config-ship-shape',
+  extends: "stylelint-config-ship-shape",
 };
