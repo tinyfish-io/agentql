@@ -1,7 +1,5 @@
-const { wrap, configure } = require('agentql');
+const { wrap } = require('agentql');
 const { chromium } = require('playwright');
-
-require('dotenv').config();
 
 // Set the URL to the desired website
 const URL = 'https://kinfield.com/';
@@ -15,9 +13,6 @@ const CLOSE_POPUP_QUERY = `
 `;
 
 async function main() {
-  // Configure AgentQL with API key
-  configure({ apiKey: process.env.AGENTQL_API_KEY });
-
   const browser = await chromium.launch({ headless: false });
   const context = await browser.newContext();
 
