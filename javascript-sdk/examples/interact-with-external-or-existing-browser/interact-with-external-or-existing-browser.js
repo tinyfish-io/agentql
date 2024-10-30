@@ -1,7 +1,7 @@
 const { wrap, configure } = require('agentql');
 const { chromium } = require('playwright');
 
-const WEBSOCKET_URL = "ws://127.0.0.1:9222/devtools/browser/28663a7e-7178-4acc-8123-480605f26dc52"
+const WEBSOCKET_URL = "http://localhost:9222"
 
 const URL = "https://scrapeme.live/shop";
 
@@ -37,6 +37,5 @@ async function interactWithNewPageInLocalBrowser() {
 (async () => {
   // Set the AgentQL API key via the `configure` method.
   configure({ apiKey: 'YOUR_API_KEY' });
-
   await interactWithNewPageInLocalBrowser();
 })();
