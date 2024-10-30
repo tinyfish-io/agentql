@@ -1,7 +1,5 @@
 const { chromium } = require('playwright');
-const { wrap, configure } = require('agentql');
-
-require('dotenv').config();
+const { wrap } = require('agentql');
 
 // Set the URL to the desired website
 const URL = 'https://practicetestautomation.com/practice-test-login/';
@@ -15,9 +13,6 @@ const LOGIN_QUERY = `
 `;
 
 async function main() {
-  // Configure the AgentQL API key
-  configure({ apiKey: process.env.AGENTQL_API_KEY });
-
   const browser = await chromium.launch({ headless: false });
   const context = await browser.newContext();
 
