@@ -1,4 +1,4 @@
-const { wrap, configure } = require('agentql');
+const { wrap } = require('agentql');
 const { chromium } = require('playwright');
 
 // Set the URL to the desired website
