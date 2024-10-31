@@ -1,5 +1,5 @@
 const { randomInt } = require('crypto');
-const { wrap, configure } = require('agentql');
+const { wrap } = require('agentql');
 const { chromium } = require('playwright');
 
 const BROWSER_IGNORED_ARGS = ['--enable-automation', '--disable-extensions'];
