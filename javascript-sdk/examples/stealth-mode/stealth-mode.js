@@ -61,8 +61,6 @@ async function main() {
         ignoreDefaultArgs: BROWSER_IGNORED_ARGS,
     });
 
-    configure({ apiKey: 'Ngq7twL_y4-IHjIpvc5dSvQkyz82RQtd6fi2VnHldkJlE0VDN8S7sg' });
-
     const context = await browser.newContext({
         proxy: proxy ?? undefined,
         locale: 'en-US,en,ru',
@@ -83,7 +81,7 @@ async function main() {
         },
     });
 
-    const page = wrap(context.newPage());
+    const page = wrap(await context.newPage());
     await page.goto('https://bot.sannysoft.com/', { referer });
     await page.waitForTimeout(30000);
 
