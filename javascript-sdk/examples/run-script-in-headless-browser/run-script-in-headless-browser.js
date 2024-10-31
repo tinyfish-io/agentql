@@ -31,7 +31,7 @@ const STOCK_NUMBER_QUERY = `
 
   // Use Playwright's API to fill the search box and press Enter.
   await searchResponse.search_products_box.type('Charmander');
-  await normalPage.keyboard.press('Enter');
+  await page.keyboard.press('Enter');
 
   // Use queryData() method to fetch the stock number from the page.
   const stockResponse = await page.queryData(STOCK_NUMBER_QUERY);
