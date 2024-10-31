@@ -1,15 +1,15 @@
-# Example script: closing popup windows with AgentQL
+# Example script: collecting pricing data from e-commerce website using AgentQL
 
-This example demonstrates how to close popup windows (like promotion form) with AgentQL.
+This is an example of collecting pricing data from e-commerce website using AgentQL.
 
 ## Run the script
 
 - [Install AgentQL SDK](https://docs.agentql.com/javascript-sdk/installation)
-- Save this JavaScript file locally as **close-popup.js**
+- Save this JavaScript file locally as **collect_pricing_data.js**
 - Run the following command from the project's folder:
 
 ```bash
-node close-popup.js
+node collect_pricing_data.js
 ```
 
 ## Play with the query
