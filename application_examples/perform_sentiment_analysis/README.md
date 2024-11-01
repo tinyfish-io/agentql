@@ -1,4 +1,4 @@
-# Example script: perform sentiment anaylsis with AgentQL
+# Example script: perform sentiment analysis with AgentQL
 
 This example demonstrates how to perform sentiment analysis on YouTube comments with AgentQL and OpenAI's GPT-3.5 model.
 
