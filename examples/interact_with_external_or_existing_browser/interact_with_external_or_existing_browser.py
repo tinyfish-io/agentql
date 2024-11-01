@@ -4,7 +4,7 @@ import agentql
 from playwright.sync_api import sync_playwright
 
 # The URL of the external or existing browser you wish to connect.
-WEBSOCKET_URL = "http://localhost:9222"
+WEBSOCKET_URL = "ws://127.0.0.1:9222/devtools/browser/b717eab1-66ec-4323-9653-1a10fb0d61f0"
 
 URL = "https://scrapeme.live/shop"
 
@@ -71,4 +71,4 @@ def interact_with_new_page_in_local_browser():
 
 
 if __name__ == "__main__":
-    interact_with_new_page_in_local_browser()
+    fetch_data_from_open_website_page()
