@@ -24,6 +24,7 @@ async function main() {
 	const page = await wrap(await browser.newPage());
 	await page.goto(URL);
 
+	// Use queryElements() method to locate the search box from the page.
 	const response = await page.queryElements(QUERY);
 
 	// Get the XPath of the search box element.
