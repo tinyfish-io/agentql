@@ -11,9 +11,9 @@ There are several techniques we use in this script to avoid detection:
 
 ## Run the script
 
-- [Install AgentQL SDK](https://docs.agentql.com/installation/sdk-installation)
+- [Install AgentQL SDK](https://docs.agentql.com/javascript-sdk/installation)
   - If you already have SDK installed, make sure to update to the latest version: `npm install agentql --upgrade`
-- Save this javascript file locally as **stealth-mode.js**
+- Save this Javascript file locally as **stealth-mode.js**
 - Run the following command from the project's folder:
 
 ```bash

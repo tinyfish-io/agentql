@@ -78,7 +78,7 @@ async function main() {
     },
   });
 
-  const page = wrap(await context.newPage());
+  const page = await wrap(await context.newPage());
   await page.goto('https://bot.sannysoft.com/', { referer });
   await page.waitForTimeout(30000);
 
