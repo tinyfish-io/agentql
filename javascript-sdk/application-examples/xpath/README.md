@@ -11,7 +11,7 @@ This example demonstrates how to get XPath of an element that was fetched with A
 npm install playwright-dompath
 ```
 
-- Save this python file locally as **xpath.js**
+- Save this Javascript file locally as **xpath.js**
 - Run the following command from the project's folder:
 
 ```bash
