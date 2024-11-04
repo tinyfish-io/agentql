@@ -9,7 +9,7 @@ This example demonstrates how to wait for the page to load completely before que
 - Run the following command from the project's folder:
 
 ```bash
-node wait_for_entire_page_load.py
+node wait_for_entire_page_load.js
 ```
 
 ## Play with the query
