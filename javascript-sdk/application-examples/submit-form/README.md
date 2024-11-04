@@ -15,6 +15,7 @@ node submit-form.js
 ## Code explanation
 
 This script demonstrates how to:
+
 1. Navigate to a form page
 2. Fill out form fields using AgentQL queries
 3. Submit the form and handle the confirmation
