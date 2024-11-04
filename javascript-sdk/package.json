@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "agentql": "^0.0.1",
-    "playwright": "^1.48.2"
+    "playwright": "^1.48.2",
+    "playwright-dompath": "^0.0.7"
   }
 }
