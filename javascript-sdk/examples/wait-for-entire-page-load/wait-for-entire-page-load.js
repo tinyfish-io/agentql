@@ -28,10 +28,10 @@ async function main() {
 
   for (let i = 0; i < 2; i++) {
     // Wait for the page to load completely.
-    page.waitForPageReadyState();
+    await page.waitForPageReadyState();
 
     // Scroll to the bottom of the page to load more videos.
-    page.keyboard.press('End');
+    await page.keyboard.press('End');
   }
 
   // Use query_data() method to fetch video lists data from the page.
