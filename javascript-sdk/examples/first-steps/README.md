@@ -5,11 +5,11 @@ This is an example of collecting pricing data from e-commerce website using Agen
 ## Run the script
 
 - [Install AgentQL SDK](https://docs.agentql.com/javascript-sdk/installation)
-- Save this JavaScript file locally as **first_steps.js**
+- Save this JavaScript file locally as **first-steps.js**
 - Run the following command from the project's folder:
 
 ```bash
-node first_steps.js
+node first-steps.js
 ```
 
 ## Play with the query
