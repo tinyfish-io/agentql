@@ -23,7 +23,7 @@ async function interactWithNewPageInLocalBrowser() {
   const browser = await chromium.connectOverCDP(WEBSOCKET_URL);
 
   // Create a new tab in the browser window and wrap it to get access to the AgentQL's querying API
-  const page = await wrap(await browser.contexts()[0].newPage());
+  const page = await wrap(await browser.newPage());
 
   await page.goto(URL);
 

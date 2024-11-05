@@ -26,13 +26,13 @@ const NATURAL_LANGUAGE_PROMPT = 'Button to display Qwilfish page';
 
 async function main() {
   // Configure the AgentQL API key
-  configure({ apiKey: 'YOUR_API_KEY' });
+  configure({ apiKey: process.env.AGENTQL_API_KEY });
 
   const browser = await chromium.launch({ headless: false });
   const context = await browser.newContext();
 
   // Wrap the page to get access to the AgentQL's querying API
-  const agentqlPage = wrap(await context.newPage());
+  const agentqlPage = await wrap(await context.newPage());
 
   await agentqlPage.goto(URL);
 
