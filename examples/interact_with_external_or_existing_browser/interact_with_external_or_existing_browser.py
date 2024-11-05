@@ -4,7 +4,7 @@ import agentql
 from playwright.sync_api import sync_playwright
 
 # The URL of the external or existing browser you wish to connect.
-WEBSOCKET_URL = "ws://127.0.0.1:9222/devtools/browser/b717eab1-66ec-4323-9653-1a10fb0d61f0"
+WEBSOCKET_URL = "https://localhost:8080"
 
 URL = "https://scrapeme.live/shop"
 
@@ -41,7 +41,7 @@ def fetch_data_from_open_website_page():
         page = agentql.wrap(browser.contexts[0].pages[0])
 
         # Use query_data() method to fetch the data from the page
-        response = page.query_data(VIATOR_TOURS_QUERY)
+        response = page.query_data(STOCK_QUERY)
 
         print(response)
 
