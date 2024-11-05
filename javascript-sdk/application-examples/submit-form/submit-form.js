@@ -1,4 +1,7 @@
+const { wrap } = require('agentql');
+const { chromium } = require('playwright');
 
+(async () => {
   const browser = await chromium.launch({ headless: false });
   const page = wrap(await browser.newPage());
 
@@ -22,7 +25,7 @@
   await response.last_name.type('Doe');
   await response.email.type('john.doe@example.com');
   await response.subject_of_inquiry.selectOption({ label: 'Sales Inquiry' });
-  await response.inquiry_text_box.fill("I want to learn more about AgentQL");
+  await response.inquiry_text_box.fill('I want to learn more about AgentQL');
   await response.submit_btn.click();
 
   const confirm_query = `
@@ -36,3 +39,4 @@
   console.log('Form submitted successfully!');
 
   await browser.close();
+})();
