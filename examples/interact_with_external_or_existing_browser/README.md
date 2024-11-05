@@ -30,7 +30,7 @@ chrome.exe --remote-debugging-port=9222
 python3 run_script_with_local_browser.py
 ```
 
-- If you want to learn how to work with open pages, navigate to [Viator website](https://www.viator.com/Rome-tours/Walking-Tours/d511-g16-c56) within the browser, and use `fetch_data_from_open_website_page()` method in the script to fetch data from the page.
+- If you want to learn how to work with open pages, navigate to [Scrapeme website](https://scrapeme.live/shop/Charmander/) within the browser, and use `fetch_data_from_open_website_page()` method in the script to fetch data from the page.
 
 ## Play with the query
 

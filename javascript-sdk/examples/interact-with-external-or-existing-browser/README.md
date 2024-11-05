@@ -5,7 +5,7 @@ This is an example shows how to interact with external or existing browser by re
 ## Run the script
 
 - [Install AgentQL SDK](https://docs.agentql.com/javascript-sdk/installation)
-- Save this JS file locally as **interact-with-external-or-existing-browser.js**
+- Save this JS file locally as **interact-with-external-or-existing-browser**.js**
 - Close your Google Chrome application if it is open.
 - If you're using **Mac**, open the terminal and run the following command:
 
@@ -31,7 +31,7 @@ chrome.exe --remote-debugging-port=9222
 node interact-with-external-or-existing-browser.js
 ```
 
-- If you want to learn how to work with open pages, navigate to [Viator website](https://www.viator.com/Rome-tours/Walking-Tours/d511-g16-c56) within the browser, and use `fetch_data_from_open_website_page()` method in the script to fetch data from the page.
+- If you want to learn how to work with open pages, navigate to [Scrapeme website](https://scrapeme.live/shop/Charmander/) within the browser, and use `fetch_data_from_open_website_page()` method in the script to fetch data from the page.
 
 ## Play with the query
 

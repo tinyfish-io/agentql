@@ -8,16 +8,6 @@ WEBSOCKET_URL = "https://localhost:8080"
 
 URL = "https://scrapeme.live/shop"
 
-VIATOR_TOURS_QUERY = """
-{
-    tours[] {
-        title
-        price
-        length
-    }
-}
-"""
-
 SEARCH_QUERY = """
 {
     search_products_box
@@ -71,4 +61,4 @@ def interact_with_new_page_in_local_browser():
 
 
 if __name__ == "__main__":
-    fetch_data_from_open_website_page()
+    interact_with_new_page_in_local_browser()
