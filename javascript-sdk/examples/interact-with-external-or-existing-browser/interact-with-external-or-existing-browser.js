@@ -33,7 +33,7 @@ async function fetchDataFromOpenWebsitePage() {
   const browser = await chromium.connectOverCDP(WEBSOCKET_URL);
 
   // Get the first page from the opened browser and wrap it to get access to the AgentQL's querying API
-  const page = await wrap(await browser.contexts()[0].pages()[0]);
+  const page = await wrap(browser.contexts()[0].pages()[0]);
 
   // Use query_data() method to fetch the data from the page
   const response = await page.queryData(STOCK_QUERY);

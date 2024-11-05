@@ -18,7 +18,7 @@
     "prettier": "^2.8.7"
   },
   "dependencies": {
-    "agentql": "^0.0.1",
+    "agentql": "^0.0.3",
     "playwright": "^1.48.2"
   }
 }
