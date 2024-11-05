@@ -131,8 +131,8 @@ with sync_playwright() as playwright, playwright.chromium.launch(headless=False)
 - [Run AgentQL in Stealth Mode](https://github.com/tinyfish-io/agentql/tree/main/examples/stealth_mode)
 - [Wait for page to load](https://github.com/tinyfish-io/agentql/tree/main/examples/wait_for_entire_page_load)
 - [Collect pricing data from an e-commerce website using AgentQL](https://github.com/tinyfish-io/agentql/tree/main/application_examples/collect_ecommerce_pricing_data)
-- [Perform sentiment analysis](https://github.com/tinyfish-io/fish-tank/tree/main/application_examples/perform_sentiment_analysis)
-- [Get an element's XPath](https://github.com/tinyfish-io/fish-tank/tree/main/application_examples/xpath)
+- [Perform sentiment analysis](https://github.com/tinyfish-io/agentql/tree/main/application_examples/perform_sentiment_analysis)
+- [Get an element's XPath](https://github.com/tinyfish-io/agentql/tree/main/application_examples/xpath)
 - [Run script online in Google Colaboratory](./examples/run_script_online_in_google_colab)
 
 For comprehensive guides and API references, check out our [official documentation](https://docs.agentql.com).
