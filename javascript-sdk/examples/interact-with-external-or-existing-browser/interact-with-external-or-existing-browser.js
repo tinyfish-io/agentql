@@ -1,7 +1,7 @@
 const { wrap, configure } = require('agentql');
 const { chromium } = require('playwright');
 
-const WEBSOCKET_URL = 'ws://127.0.0.1:9222/devtools/browser/b717eab1-66ec-4323-9653-1a10fb0d61f0';
+const WEBSOCKET_URL = 'https://localhost:8080';
 
 const URL = 'https://scrapeme.live/shop';
 
@@ -33,12 +33,13 @@ async function fetchDataFromOpenWebsitePage() {
   const browser = await chromium.connectOverCDP(WEBSOCKET_URL);
 
   // Get the first page from the opened browser and wrap it to get access to the AgentQL's querying API
-  const page = wrap(await browser.contexts[0].pages[0]);
+  const page = await wrap(await browser.contexts()[0].pages()[0]);
 
   // Use query_data() method to fetch the data from the page
-  const response = await page.queryData(VIATOR_TOURS_QUERY);
+  const response = await page.queryData(STOCK_QUERY);
 
   console.log(response);
+  await browser.close();
 }
 
 // This function demonstrates how to open and interact with a new page your local browser.
@@ -47,7 +48,7 @@ async function interactWithNewPageInLocalBrowser() {
   const browser = await chromium.connectOverCDP(WEBSOCKET_URL);
 
   // Create a new tab in the browser window and wrap it to get access to the AgentQL's querying API
-  const page = wrap(await browser.contexts()[0].newPage());
+  const page = await wrap(await browser.contexts()[0].newPage());
 
   await page.goto(URL);
 
@@ -61,10 +62,11 @@ async function interactWithNewPageInLocalBrowser() {
   // Use query_data() method to fetch the stock number from the page
   const stockResponse = await page.queryData(STOCK_QUERY);
   console.log(stockResponse);
+  await browser.close();
 }
 
 (async () => {
   // Set the AgentQL API key via the `configure` method.
-  configure({ apiKey: 'pDU7p1plFsKvqZMC0iBrdUEroPxss8K59zknBYAFW_k8I87TAYIZ2g' });
+  configure({ apiKey: 'your_api_key' });
   await interactWithNewPageInLocalBrowser();
 })();
