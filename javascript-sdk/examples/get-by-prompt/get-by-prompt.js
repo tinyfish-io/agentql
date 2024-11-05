@@ -7,7 +7,7 @@ const { chromium } = require('playwright');
 const URL = 'https://thinking-tester-contact-list.herokuapp.com/';
 
 async function main() {
-// Configure the AgentQL API key
+  // Configure the AgentQL API key
   configure({
     apiKey: process.env.AGENTQL_API_KEY, // This is the default and can be omitted.
   });
