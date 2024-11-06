@@ -11,11 +11,11 @@ This example demonstrates how to get XPath of an element that was fetched with A
 pip install playwright-dompath
 ```
 
-- Save this python file locally as **xpath.py**
+- Save this python file locally as **main.py**
 - Run the following command from the project's folder:
 
 ```bash
-python3 xpath.py
+python3 main.py
 ```
 
 ## Play with the query

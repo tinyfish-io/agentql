@@ -5,11 +5,11 @@ This example demonstrates how to wait for the page to load completely before que
 ## Run the script
 
 - [Install AgentQL SDK](https://docs.agentql.com/installation/sdk-installation)
-- Save this python file locally as **wait_for_entire_page_load.py**
+- Save this python file locally as **main.py**
 - Run the following command from the project's folder:
 
 ```bash
-python3 wait_for_entire_page_load.py
+python3 main.py
 ```
 
 ## Play with the query

@@ -13,9 +13,9 @@ There are several techniques we use in this script to avoid detection:
 
 - [Install AgentQL SDK](https://docs.agentql.com/installation/sdk-installation)
   - If you already have SDK installed, make sure to update to the latest version: `pip3 install agentql --upgrade`
-- Save this python file locally as **stealth_mode.py**
+- Save this python file locally as **main.py**
 - Run the following command from the project's folder:
 
 ```bash
-python3 stealth_mode.py
+python3 main.py
 ```

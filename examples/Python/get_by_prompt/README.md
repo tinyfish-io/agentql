@@ -5,11 +5,11 @@ This example shows how to use AgentQL's [`get_by_prompt`](https://docs.agentql.c
 ## Run the script
 
 - [Install AgentQL SDK](https://docs.agentql.com/installation/sdk-installation)
-- Save this python file locally as **get_by_prompt.py**
+- Save this python file locally as **main.py**
 - Run the following command from the project's folder:
 
 ```bash
-python3 get_by_prompt.py
+python3 main.py
 ```
 
 ## Play with the query

@@ -5,11 +5,11 @@ This is an example shows how to login into websites by retrieving and interactin
 ## Run the script
 
 - [Install AgentQL SDK](https://docs.agentql.com/installation/sdk-installation)
-- Save this python file locally as **log_into_sites.py**
+- Save this python file locally as **main.py**
 - Run the following command from the project's folder:
 
 ```bash
-python3 log_into_sites.py
+python3 main.py
 ```
 
 ## Play with the query

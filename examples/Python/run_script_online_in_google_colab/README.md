@@ -5,7 +5,7 @@ This example demonstrates how to run AgentQL script in online development enviro
 ## Run the script
 
 - Go to [Google Colaboratory](https://colab.research.google.com/) website
-- Upload the **agentql.ipynb** file to Google Colab
+- Upload the **main.ipynb** file to Google Colab
 - Run the script by clicking the run button of each cell sequentially.
 
 ## Play with the query

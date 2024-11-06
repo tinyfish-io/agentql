@@ -5,7 +5,7 @@ This example demonstrates how to interact with an external or existing browser w
 ## Run the script
 
 - [Install AgentQL SDK](https://docs.agentql.com/installation/sdk-installation)
-- Save this Python file locally as **run_script_with_local_browser.py**
+- Save this Python file locally as **main.py**
 - Close your Google Chrome application if it is open.
 - If you're using **Mac**, open the terminal and run the following command:
 
@@ -22,12 +22,12 @@ chrome.exe --remote-debugging-port=9222
 **Make sure to replace `chrome.exe` with the path to your Chrome executable if it's not already in your system's PATH.**
 
 - In the browser window that's opened, select the Google profile you would like to use for this session.
-- In `run_script_with_local_browser.py`, replace variable `WEBSOCKET_URL`'s placeholder value with the actual WebSocket URL returned in terminal or command prompt. The URL should be in the format of `ws://127.0.0.1:9222/devtools/browser/387adf4c-243f-4051-a181-46798f4a46f4`.
+- In `main.py`, replace variable `WEBSOCKET_URL`'s placeholder value with the actual WebSocket URL returned in terminal or command prompt. The URL should be in the format of `ws://127.0.0.1:9222/devtools/browser/387adf4c-243f-4051-a181-46798f4a46f4`.
 
 - Run the following command from the project's folder:
 
 ```bash
-python3 run_script_with_local_browser.py
+python3 main.py
 ```
 
 - If you want to learn how to work with open pages, navigate to [Scrapeme website](https://scrapeme.live/shop/Charmander/) within the browser, and use `fetch_data_from_open_website_page()` method in the script to fetch data from the page.

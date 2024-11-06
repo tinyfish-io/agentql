@@ -5,11 +5,11 @@ This example demonstrates how to save and load a authenticated state (i.e. signe
 ## Run the script
 
 - [Install AgentQL SDK](https://docs.agentql.com/installation/sdk-installation)
-- Save this python file locally as **save_and_load_authenticated_state.py**
+- Save this python file locally as **main.py**
 - Run the following command from the project's folder:
 
 ```bash
-python3 save_and_load_authenticated_state.py
+python3 main.py
 ```
 
 ## Play with the query

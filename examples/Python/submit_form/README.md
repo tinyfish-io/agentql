@@ -5,11 +5,11 @@ This is an example of how to filling out and submitting a form using AgentQL.
 ## Run the script
 
 - [Install AgentQL SDK](https://docs.agentql.com/installation/sdk-installation)
-- Save this python file locally as **submit_form.py**
+- Save this python file locally as **main.py**
 - Run the following command from the project's folder:
 
 ```bash
-python3 submit_form.py
+python3 main.py
 ```
 
 ## Play with the query

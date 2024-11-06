@@ -5,11 +5,11 @@ This example demonstrates how to compare product prices across websites with que
 ## Run the script
 
 - [Install AgentQL SDK](https://docs.agentql.com/installation/sdk-installation)
-- Save this python file locally as **compare_product_prices.py**
+- Save this python file locally as **main.py**
 - Run the following command from the project's folder:
 
 ```bash
-python3 compare_product_prices.py
+python3 main.py
 ```
 
 ## Play with the query

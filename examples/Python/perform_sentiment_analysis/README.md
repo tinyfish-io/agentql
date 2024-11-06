@@ -11,7 +11,7 @@ This example demonstrates how to perform sentiment analysis on YouTube comments 
 pip install openai
 ```
 
-- Save this python file locally as **perform_sentiment_analysis.py**
+- Save this python file locally as **main.py**
 - Set your OpenAI API key as an environment variable with the following command:
 
 ```bash
@@ -21,7 +21,7 @@ export OPENAI_API_KEY="My API Key"
 - Run the following command from the project's folder:
 
 ```bash
-python3 perform_sentiment_analysis.py
+python3 main.py
 ```
 
 ## Play with the query

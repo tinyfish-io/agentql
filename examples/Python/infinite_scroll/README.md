@@ -5,11 +5,11 @@ This example demonstrates how to load additional content on pages that load cont
 ## Run the script
 
 - [Install AgentQL SDK](https://docs.agentql.com/installation/sdk-installation)
-- Save this python file locally as **infinite_scroll.py**
+- Save this python file locally as **main.py**
 - Run the following command from the project's folder:
 
 ```bash
-python3 infinite_scroll.py
+python3 main.py
 ```
 
 ## Adjust the scrolling method

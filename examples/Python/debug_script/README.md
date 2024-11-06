@@ -5,12 +5,12 @@ This example demonstrates how to debug AgentQL scripts in both synchronous and a
 ## Run the script
 
 - [Install AgentQL SDK](https://docs.agentql.com/installation/sdk-installation)
-- Save this python file locally as **debug_agentql_script.py** for debugging in **synchronous environment** or **async_debug_agentql_script.py** for debugging in **asynchronous environment**
+- Save this python file locally as **main.py** for debugging in **synchronous environment** or **async_main.py** for debugging in **asynchronous environment**
 - Run the following command from the project's folder:
 
 ```bash
-python3 debug_agentql_script.py
-python3 async_debug_agentql_script.py
+python3 main.py
+python3 async_main.py
 ```
 
 ## Play with the query
