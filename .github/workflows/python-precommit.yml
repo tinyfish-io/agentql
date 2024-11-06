@@ -1,8 +1,10 @@
-name: Pre-commit checks
+name: Python Pre-commit checks
 
 on:
   pull_request:
     types: [opened, synchronize, reopened]
+    paths:
+      - "examples/Python/**"
 
 jobs:
   python-pre-commit:
@@ -32,44 +34,25 @@ jobs:
       #  ----- install dependencies -----
       #----------------------------------------------
       - name: Install dependencies
+        working-directory: ./examples/Python
         run: |
           poetry install --no-interaction --no-root --with dev
 
       - name: Lint check
+        working-directory: ./examples/Python
         run: pylint --disable=R,C application_examples examples
 
       - name: Code style check
+        working-directory: ./examples/Python
         run: black . --check
 
       - name: Imports sort check
+        working-directory: ./examples/Python
         uses: isort/isort-action@master
 
       - name: Static check
+        working-directory: ./examples/Python
         uses: jakebailey/pyright-action@v2
         continue-on-error: true
         with:
           pylance-version: latest-release
-
-  js-pre-commit:
-    name: JS Pre-commit checks
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: "20"
-
-      - name: Install dependencies
-        working-directory: ./javascript-sdk
-        run: npm install
-
-      - name: Run ESLint
-        working-directory: ./javascript-sdk
-        run: npm run lint
-
-      - name: Run Prettier
-        working-directory: ./javascript-sdk
-        run: npx prettier --check .

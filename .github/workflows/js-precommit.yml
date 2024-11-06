@@ -1,0 +1,32 @@
+name: JSPre-commit checks
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    paths:
+      - "examples/JS/**"
+
+jobs:
+  js-pre-commit:
+    name: JS Pre-commit checks
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "18"
+
+      - name: Install dependencies
+        working-directory: ./examples/JS
+        run: npm install
+
+      - name: Run ESLint
+        working-directory: ./examples/JS
+        run: npm run lint
+
+      - name: Run Prettier
+        working-directory: ./examples/JS
+        run: npx prettier --check .
