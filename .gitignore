@@ -37,6 +37,6 @@ tmp/
 
 *env.local
 
-examples/JS/node_modules/
-examples/Python/__pycache__/
-examples/Python/.venv/
+examples/js/node_modules/
+examples/python/__pycache__/
+examples/python/.venv/

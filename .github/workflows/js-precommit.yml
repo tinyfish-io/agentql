@@ -4,7 +4,7 @@ on:
   pull_request:
     types: [opened, synchronize, reopened]
     paths:
-      - "examples/JS/**"
+      - "examples/js/**"
 
 jobs:
   js-pre-commit:
