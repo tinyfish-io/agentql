@@ -236,14 +236,19 @@ main();
 - [Close cookie dialog](https://github.com/tinyfish-io/agentql/tree/main/examples/js/close-cookie-dialog)
 - [Close popup windows (like promotion form)](https://github.com/tinyfish-io/agentql/tree/main/examples/js/close-popup)
 - [Compare product prices across different websites](https://github.com/tinyfish-io/agentql/tree/main/examples/js/compare-product-prices)
+- [Collect pricing data from an e-commerce website](https://github.com/tinyfish-io/agentql/tree/main/examples/js/collect-pricing-data)
+- [Collect YouTube comments](https://github.com/tinyfish-io/agentql/tree/main/examples/js/collect-youtube-comments)
 - [Get a single element by prompt](https://github.com/tinyfish-io/agentql/tree/main/examples/js/get-by-prompt)
 - [Use AgentQL with an alternative/open browser](https://github.com/tinyfish-io/agentql/tree/main/examples/js/interact-with-external-or-existing-browser)
+- [Perform sentiment analysis](https://github.com/tinyfish-io/agentql/tree/main/examples/js/perform-sentiment-analysis)
 - [Query a list of items](https://github.com/tinyfish-io/agentql/tree/main/examples/js/list-query-usage)
 - [Log into sites with AgentQL](https://github.com/tinyfish-io/agentql/tree/main/examples/js/log-into-sites)
 - [Run script in headless browser](https://github.com/tinyfish-io/agentql/tree/main/examples/js/run-script-in-headless-browser)
 - [Save and reuse logged in state](https://github.com/tinyfish-io/agentql/tree/main/examples/js/save-and-load-authenticated-session)
+- [Submit a form](https://github.com/tinyfish-io/agentql/tree/main/examples/js/submit-form)
 - [Run AgentQL in Stealth Mode](https://github.com/tinyfish-io/agentql/tree/main/examples/js/stealth-mode)
 - [Wait for page to load](https://github.com/tinyfish-io/agentql/tree/main/examples/js/wait-for-entire-page-load)
+- [Get an element's XPath](https://github.com/tinyfish-io/agentql/tree/main/examples/js/xpath)
 
 For comprehensive guides and API references, check out our [official documentation](https://docs.agentql.com).
 
