@@ -8,6 +8,18 @@
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "eslint.workingDirectories": [
+    {
+      "directory": "./javascript-sdk",
+      "changeProcessCWD": true
+    }
+  ],
   "editor.formatOnSave": true,
   "files.insertFinalNewline": true,
   "black-formatter.args": [

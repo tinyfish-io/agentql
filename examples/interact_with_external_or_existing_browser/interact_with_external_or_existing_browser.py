@@ -8,16 +8,6 @@ WEBSOCKET_URL = "http://localhost:9222"
 
 URL = "https://scrapeme.live/shop"
 
-VIATOR_TOURS_QUERY = """
-{
-    tours[] {
-        title
-        price
-        length
-    }
-}
-"""
-
 SEARCH_QUERY = """
 {
     search_products_box
@@ -41,7 +31,7 @@ def fetch_data_from_open_website_page():
         page = agentql.wrap(browser.contexts[0].pages[0])
 
         # Use query_data() method to fetch the data from the page
-        response = page.query_data(VIATOR_TOURS_QUERY)
+        response = page.query_data(STOCK_QUERY)
 
         print(response)
 

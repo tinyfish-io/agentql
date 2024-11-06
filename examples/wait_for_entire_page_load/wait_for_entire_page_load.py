@@ -30,7 +30,7 @@ def main():
             # Scroll down the page to trigger loading of more videos
             page.keyboard.press("End")
 
-        # # Use query_data() method to fetch video lists data from the page
+        # Use query_data() method to fetch video lists data from the page
         response = page.query_data(QUERY)
 
         # Print the details of the first video

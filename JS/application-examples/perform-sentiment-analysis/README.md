@@ -4,14 +4,14 @@ This example demonstrates how to perform sentiment analysis on YouTube comments 
 
 ## Run the script
 
-- [Install AgentQL SDK](https://docs.agentql.com/installation/sdk-installation)
-- [Install OpenAI SDK](https://pypi.org/project/openai/) with the following command:
+- [Install AgentQL SDK](https://docs.agentql.com/javascript-sdk/installation)
+- [Install OpenAI SDK](https://www.npmjs.com/package/openai) with the following command:
 
 ```bash
-pip install openai
+npm install openai
 ```
 
-- Save this python file locally as **perform_sentiment_analysis.py**
+- Save this JavaScript file locally as **main.js**
 - Set your OpenAI API key as an environment variable with the following command:
 
 ```bash
@@ -21,7 +21,7 @@ export OPENAI_API_KEY="My API Key"
 - Run the following command from the project's folder:
 
 ```bash
-python3 perform_sentiment_analysis.py
+node main.js
 ```
 
 ## Play with the query

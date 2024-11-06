@@ -5,7 +5,7 @@ on:
     types: [opened, synchronize, reopened]
 
 jobs:
-  pre-commit:
+  python-pre-commit:
     name: Pre-commit checks
     runs-on: ubuntu-latest
     steps:
@@ -49,3 +49,27 @@ jobs:
         continue-on-error: true
         with:
           pylance-version: latest-release
+
+  js-pre-commit:
+    name: JS Pre-commit checks
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "20"
+
+      - name: Install dependencies
+        working-directory: ./javascript-sdk
+        run: npm install
+
+      - name: Run ESLint
+        working-directory: ./javascript-sdk
+        run: npm run lint
+
+      - name: Run Prettier
+        working-directory: ./javascript-sdk
+        run: npx prettier --check .
