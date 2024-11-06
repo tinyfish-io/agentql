@@ -20,13 +20,13 @@ jobs:
           node-version: "18"
 
       - name: Install dependencies
-        working-directory: ./examples/JS
+        working-directory: ./examples/js
         run: npm install
 
       - name: Run ESLint
-        working-directory: ./examples/JS
+        working-directory: ./examples/js
         run: npm run lint
 
       - name: Run Prettier
-        working-directory: ./examples/JS
+        working-directory: ./examples/js
         run: npx prettier --check .
