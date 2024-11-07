@@ -4,7 +4,7 @@ import agentql
 from playwright.sync_api import sync_playwright
 
 # Set the URL to the desired website
-URL = "https://thinking-tester-contact-list.herokuapp.com/"
+URL = "https://duckduckgo.com/"
 
 
 def main():
@@ -15,12 +15,15 @@ def main():
         # Navigate to the URL
         page.goto(URL)
 
-        # Get the sign up button by the prompt text
-        sign_up_btn = page.get_by_prompt(prompt="Sign up button")
+        # Get the search bar with the prompt text
+        search_bar = page.get_by_prompt("the search bar")
 
-        # Click the sign up button if it exists
-        if sign_up_btn:
-            sign_up_btn.click()
+        # Fill out the search bar, if it exists
+        if search_bar:
+            search_bar.fill("AgentQL")
+
+            # Click the search button
+            page.get_by_prompt("the search button").click()
 
         # Used only for demo purposes. It allows you to see the effect of the script.
         page.wait_for_timeout(10000)
