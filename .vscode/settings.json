@@ -36,6 +36,6 @@
   "pylint.args": [
     "--rcfile=./examples/python/.pylintrc"
   ],
-  "python.analysis.typeCheckingMode": "basic",
+  "python.analysis.typeCheckingMode": "standard",
   "editor.rulers": [100]
 }
