@@ -209,46 +209,28 @@ main();
 
 ## More examples
 
-### Python
-
-- [Getting started with AgentQL](https://github.com/tinyfish-io/agentql/tree/main/examples/python/first_steps)
-- [Close cookie dialog](https://github.com/tinyfish-io/agentql/tree/main/examples/python/close_cookie_dialog)
-- [Close popup windows (like promotion form)](https://github.com/tinyfish-io/agentql/tree/main/examples/python/close_popup)
-- [Compare product prices across different websites](https://github.com/tinyfish-io/agentql/tree/main/examples/python/compare_product_prices)
-- [Debug AgentQL script](https://github.com/tinyfish-io/agentql/tree/main/examples/python/debug_script)
-- [Get a single element by prompt](https://github.com/tinyfish-io/agentql/tree/main/examples/python/get_by_prompt)
-- [Scroll to load more content ("infinite scroll")](https://github.com/tinyfish-io/agentql/tree/main/examples/python/infinite_scroll)
-- [Use AgentQL with an alternative/open browser](https://github.com/tinyfish-io/agentql/tree/main/examples/python/interact_with_external_or_existing_browser)
-- [Query a list of items](https://github.com/tinyfish-io/agentql/tree/main/examples/python/list_query_usage)
-- [Log into sites with AgentQL](https://github.com/tinyfish-io/agentql/tree/main/examples/python/log_into_sites)
-- [Run script in headless browser](https://github.com/tinyfish-io/agentql/tree/main/examples/python/run_script_in_headless_browser)
-- [Save and reuse logged in state](https://github.com/tinyfish-io/agentql/tree/main/examples/python/save_and_load_authenticated_session)
-- [Run AgentQL in Stealth Mode](https://github.com/tinyfish-io/agentql/tree/main/examples/python/stealth_mode)
-- [Wait for page to load](https://github.com/tinyfish-io/agentql/tree/main/examples/python/wait_for_entire_page_load)
-- [Collect pricing data from an e-commerce website using AgentQL](https://github.com/tinyfish-io/agentql/tree/main/examples/python/collect_ecommerce_pricing_data)
-- [Perform sentiment analysis](https://github.com/tinyfish-io/agentql/tree/main/examples/python/perform_sentiment_analysis)
-- [Get an element's XPath](https://github.com/tinyfish-io/agentql/tree/main/examples/python/xpath)
-- [Run script online in Google Colaboratory](https://github.com/tinyfish-io/agentql/tree/main/examples/python/run_script_online_in_google_colab)
-
-### JavaScript
-
-- [Getting started with AgentQL](https://github.com/tinyfish-io/agentql/tree/main/examples/javascript/first-steps)
-- [Close cookie dialog](https://github.com/tinyfish-io/agentql/tree/main/examples/js/close-cookie-dialog)
-- [Close popup windows (like promotion form)](https://github.com/tinyfish-io/agentql/tree/main/examples/js/close-popup)
-- [Compare product prices across different websites](https://github.com/tinyfish-io/agentql/tree/main/examples/js/compare-product-prices)
-- [Collect pricing data from an e-commerce website](https://github.com/tinyfish-io/agentql/tree/main/examples/js/collect-pricing-data)
-- [Collect YouTube comments](https://github.com/tinyfish-io/agentql/tree/main/examples/js/collect-youtube-comments)
-- [Get a single element by prompt](https://github.com/tinyfish-io/agentql/tree/main/examples/js/get-by-prompt)
-- [Use AgentQL with an alternative/open browser](https://github.com/tinyfish-io/agentql/tree/main/examples/js/interact-with-external-or-existing-browser)
-- [Perform sentiment analysis](https://github.com/tinyfish-io/agentql/tree/main/examples/js/perform-sentiment-analysis)
-- [Query a list of items](https://github.com/tinyfish-io/agentql/tree/main/examples/js/list-query-usage)
-- [Log into sites with AgentQL](https://github.com/tinyfish-io/agentql/tree/main/examples/js/log-into-sites)
-- [Run script in headless browser](https://github.com/tinyfish-io/agentql/tree/main/examples/js/run-script-in-headless-browser)
-- [Save and reuse logged in state](https://github.com/tinyfish-io/agentql/tree/main/examples/js/save-and-load-authenticated-session)
-- [Submit a form](https://github.com/tinyfish-io/agentql/tree/main/examples/js/submit-form)
-- [Run AgentQL in Stealth Mode](https://github.com/tinyfish-io/agentql/tree/main/examples/js/stealth-mode)
-- [Wait for page to load](https://github.com/tinyfish-io/agentql/tree/main/examples/js/wait-for-entire-page-load)
-- [Get an element's XPath](https://github.com/tinyfish-io/agentql/tree/main/examples/js/xpath)
+| Example Name | JavaScript | Python |
+|-------------|-------------------|----------------|
+| Getting Started | [Example](https://github.com/tinyfish-io/agentql/tree/main/examples/javascript/first-steps) | [Example](https://github.com/tinyfish-io/agentql/tree/main/examples/python/first_steps) |
+| Close Cookie Dialog | [Example](https://github.com/tinyfish-io/agentql/tree/main/examples/js/close-cookie-dialog) | [Example](https://github.com/tinyfish-io/agentql/tree/main/examples/python/close_cookie_dialog) |
+| Close Popup Windows | [Example](https://github.com/tinyfish-io/agentql/tree/main/examples/js/close-popup) | [Example](https://github.com/tinyfish-io/agentql/tree/main/examples/python/close_popup) |
+| Compare Product Prices | [Example](https://github.com/tinyfish-io/agentql/tree/main/examples/js/compare-product-prices) | [Example](https://github.com/tinyfish-io/agentql/tree/main/examples/python/compare_product_prices) |
+| Debug Script | N/A | [Example](https://github.com/tinyfish-io/agentql/tree/main/examples/python/debug_script) |
+| Get Element by Prompt | [Example](https://github.com/tinyfish-io/agentql/tree/main/examples/js/get-by-prompt) | [Example](https://github.com/tinyfish-io/agentql/tree/main/examples/python/get_by_prompt) |
+| Infinite Scroll | N/A | [Example](https://github.com/tinyfish-io/agentql/tree/main/examples/python/infinite_scroll) |
+| External Browser Integration | [Example](https://github.com/tinyfish-io/agentql/tree/main/examples/js/interact-with-external-or-existing-browser) | [Example](https://github.com/tinyfish-io/agentql/tree/main/examples/python/interact_with_external_or_existing_browser) |
+| Query List Items | [Example](https://github.com/tinyfish-io/agentql/tree/main/examples/js/list-query-usage) | [Example](https://github.com/tinyfish-io/agentql/tree/main/examples/python/list_query_usage) |
+| Site Login | [Example](https://github.com/tinyfish-io/agentql/tree/main/examples/js/log-into-sites) | [Example](https://github.com/tinyfish-io/agentql/tree/main/examples/python/log_into_sites) |
+| Headless Browser | [Example](https://github.com/tinyfish-io/agentql/tree/main/examples/js/run-script-in-headless-browser) | [Example](https://github.com/tinyfish-io/agentql/tree/main/examples/python/run_script_in_headless_browser) |
+| Save/Load Auth Session | [Example](https://github.com/tinyfish-io/agentql/tree/main/examples/js/save-and-load-authenticated-session) | [Example](https://github.com/tinyfish-io/agentql/tree/main/examples/python/save_and_load_authenticated_session) |
+| Stealth Mode | [Example](https://github.com/tinyfish-io/agentql/tree/main/examples/js/stealth-mode) | [Example](https://github.com/tinyfish-io/agentql/tree/main/examples/python/stealth_mode) |
+| Wait for Page Load | [Example](https://github.com/tinyfish-io/agentql/tree/main/examples/js/wait-for-entire-page-load) | [Example](https://github.com/tinyfish-io/agentql/tree/main/examples/python/wait_for_entire_page_load) |
+| E-commerce Pricing Data | [Example](https://github.com/tinyfish-io/agentql/tree/main/examples/js/collect-pricing-data) | [Example](https://github.com/tinyfish-io/agentql/tree/main/examples/python/collect_ecommerce_pricing_data) |
+| Sentiment Analysis | [Example](https://github.com/tinyfish-io/agentql/tree/main/examples/js/perform-sentiment-analysis) | [Example](https://github.com/tinyfish-io/agentql/tree/main/examples/python/perform_sentiment_analysis) |
+| Get XPath | [Example](https://github.com/tinyfish-io/agentql/tree/main/examples/js/xpath) | [Example](https://github.com/tinyfish-io/agentql/tree/main/examples/python/xpath) |
+| Submit Form | [Example](https://github.com/tinyfish-io/agentql/tree/main/examples/js/submit-form) | [Example](https://github.com/tinyfish-io/agentql/tree/main/examples/python/submit_form) |
+| Collect YouTube Comments | [Example](https://github.com/tinyfish-io/agentql/tree/main/examples/js/collect-youtube-comments) | N/A |
+| Run in Google Colab | N/A | [Example](https://github.com/tinyfish-io/agentql/tree/main/examples/python/run_script_online_in_google_colab) |
 
 For comprehensive guides and API references, check out our [official documentation](https://docs.agentql.com).
 
