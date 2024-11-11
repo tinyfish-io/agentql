@@ -228,7 +228,7 @@ main();
 | E-commerce Pricing Data | [Example](https://github.com/tinyfish-io/agentql/tree/main/examples/js/collect-pricing-data) | [Example](https://github.com/tinyfish-io/agentql/tree/main/examples/python/collect_ecommerce_pricing_data) |
 | Sentiment Analysis | [Example](https://github.com/tinyfish-io/agentql/tree/main/examples/js/perform-sentiment-analysis) | [Example](https://github.com/tinyfish-io/agentql/tree/main/examples/python/perform_sentiment_analysis) |
 | Get XPath | [Example](https://github.com/tinyfish-io/agentql/tree/main/examples/js/xpath) | [Example](https://github.com/tinyfish-io/agentql/tree/main/examples/python/xpath) |
-| Submit Form | [Example](https://github.com/tinyfish-io/agentql/tree/main/examples/js/submit-form) | N/A |
+| Submit Form | [Example](https://github.com/tinyfish-io/agentql/tree/main/examples/js/submit-form) | [Example](https://github.com/tinyfish-io/agentql/tree/main/examples/python/submit_form) |
 | Collect YouTube Comments | [Example](https://github.com/tinyfish-io/agentql/tree/main/examples/js/collect-youtube-comments) | N/A |
 | Run in Google Colab | N/A | [Example](https://github.com/tinyfish-io/agentql/tree/main/examples/python/run_script_online_in_google_colab) |
 
