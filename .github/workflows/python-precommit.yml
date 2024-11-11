@@ -1,0 +1,58 @@
+name: Python Pre-commit checks
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    paths:
+      - "examples/Python/**"
+
+jobs:
+  python-pre-commit:
+    name: Pre-commit checks
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Install Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+
+      #----------------------------------------------
+      #  -----  install & configure poetry  -----
+      #----------------------------------------------
+      - name: Install Poetry
+        uses: snok/install-poetry@v1
+        with:
+          version: 1.8.3
+          virtualenvs-create: false
+          virtualenvs-in-project: true
+          installer-parallel: true
+
+      #----------------------------------------------
+      #  ----- install dependencies -----
+      #----------------------------------------------
+      - name: Install dependencies
+        working-directory: ./examples/Python
+        run: |
+          poetry install --no-interaction --no-root --with dev
+
+      - name: Lint check
+        working-directory: ./examples/Python
+        run: pylint --disable=R,C application_examples examples
+
+      - name: Code style check
+        working-directory: ./examples/Python
+        run: black . --check
+
+      - name: Imports sort check
+        working-directory: ./examples/Python
+        uses: isort/isort-action@master
+
+      - name: Static check
+        working-directory: ./examples/Python
+        uses: jakebailey/pyright-action@v2
+        continue-on-error: true
+        with:
+          pylance-version: latest-release

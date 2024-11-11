@@ -16,7 +16,7 @@
   },
   "eslint.workingDirectories": [
     {
-      "directory": "./javascript-sdk",
+      "directory": "./examples/js",
       "changeProcessCWD": true
     }
   ],
@@ -34,7 +34,7 @@
   ],
   "pylint.importStrategy": "fromEnvironment",
   "pylint.args": [
-    "--rcfile=.pylintrc"
+    "--rcfile=./examples/python/.pylintrc"
   ],
   "python.analysis.typeCheckingMode": "standard",
   "editor.rulers": [100]

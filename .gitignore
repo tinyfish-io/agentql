@@ -37,4 +37,6 @@ tmp/
 
 *env.local
 
-javascript-sdk/node_modules
+examples/js/node_modules/
+examples/python/__pycache__/
+examples/python/.venv/

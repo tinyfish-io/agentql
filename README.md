@@ -23,7 +23,7 @@ AgentQL is an AI-powered query language for scraping web sites and automating wo
 
 ### Features
 
-- **Python and Playwright** [AgentQL's Python SDK](https://docs.agentql.com/installation/sdk-installation) seamlessly integrates with Playwright for advanced automation and testing.
+- **Playwright** [AgentQL's Python SDK](https://docs.agentql.com/python-sdk/installation) and [JavaScript SDK](https://docs.agentql.com/javascript-sdk/installation) seamlessly integrates with Playwright for advanced automation and testing.
 - **Cross-site compatibility** lets you use the same query across different sites with similar content.
 - **Structured output** defined by the shape of your query.
 - **Natural language selectors** find elements and data anywhere on a site using intuitive queries.
@@ -33,12 +33,15 @@ AgentQL is an AI-powered query language for scraping web sites and automating wo
 
 ### Tools
 
-- **[Python SDK](https://docs.agentql.com/installation/sdk-installation)** for running automation and scraping scripts with AgentQL queries.
+- **[Python SDK](https://docs.agentql.com/python-sdk/installation)** for running automation and scraping scripts with AgentQL queries in Python.
+- **[JavaScript SDK](https://docs.agentql.com/javascript-sdk/installation)** for running automation and scraping scripts with AgentQL queries in JavaScript.
 - **[Debugger Browser Extension](https://chromewebstore.google.com/detail/agentql-debugger/idnejmodeepdobpinkkgpkeabkabhhej)** lets you debug and finesse queries in real-time on live sites.
 - **[AgentQL Query Language](https://docs.agentql.com/agentql-query/query-intro)** lets you define queries with natural language.
 - **[Playground](https://playground.agentql.com/)** for playing with AgentQL lets you export python scripts and optimize queries with prompts.
 
 ## Quick Start
+
+### Python
 
 1. Install Python SDK and dependencies via your terminal:
 
@@ -55,9 +58,27 @@ agentql init
 python3 example.py
 ```
 
+### JavaScript
+
+1. Install JavaScript SDK via your terminal:
+
+```bash
+npm install agentql
+```
+
+2. Install dependencies and set your API key by following the instructions [here](https://docs.agentql.com/javascript-sdk/installation).
+
+3. Save one of the following scripts as **example.js** and run the following from your terminal:
+
+```bash
+node example.js
+```
+
 ## Example Scripts
 
-### Data extraction with [`query_data`](https://docs.agentql.com/api-references/agentql-page#querydata)
+### Python
+
+#### Data extraction with [`query_data`](https://docs.agentql.com/python-sdk/api-references/agentql-page#querydata)
 
 ```python
 import agentql
@@ -83,7 +104,7 @@ with sync_playwright() as playwright, playwright.chromium.launch(headless=False)
     print(response)
 ```
 
-### Automation with [`get_by_prompt`](https://docs.agentql.com/api-references/agentql-page#getbyprompt) and [`query_elements`](https://docs.agentql.com/api-references/agentql-page#queryelements)
+### Automation with [`get_by_prompt`](https://docs.agentql.com/python-sdk/api-references/agentql-page#getbyprompt) and [`query_elements`](https://docs.agentql.com/python-sdk/api-references/agentql-page#queryelements)
 
 ```python
 import agentql
@@ -114,26 +135,120 @@ with sync_playwright() as playwright, playwright.chromium.launch(headless=False)
     page.wait_for_timeout(10000)
 ```
 
-### More examples
+### JavaScript
 
-- [Getting started with AgentQL](https://github.com/tinyfish-io/agentql/tree/main/examples/first_steps)
-- [Close cookie dialog](https://github.com/tinyfish-io/agentql/tree/main/examples/close_cookie_dialog)
-- [Close popup windows (like promotion form)](https://github.com/tinyfish-io/agentql/tree/main/examples/close_popup)
-- [Compare product prices across different websites](https://github.com/tinyfish-io/agentql/tree/main/examples/compare_product_prices)
-- [Debug AgentQL script](https://github.com/tinyfish-io/agentql/tree/main/examples/debug_script)
-- [Get a single element by prompt](https://github.com/tinyfish-io/agentql/tree/main/examples/get_by_prompt)
-- [Scroll to load more content ("infinite scroll")](https://github.com/tinyfish-io/agentql/tree/main/examples/infinite_scroll)
-- [Use AgentQL with an alternative/open browser](https://github.com/tinyfish-io/agentql/tree/main/examples/interact_with_external_or_existing_browser)
-- [Query a list of items](https://github.com/tinyfish-io/agentql/tree/main/examples/list_query_usage)
-- [Log into sites with AgentQL](https://github.com/tinyfish-io/agentql/tree/main/examples/log_into_sites)
-- [Run script in headless browser](https://github.com/tinyfish-io/agentql/tree/main/examples/run_script_in_headless_browser)
-- [Save and reuse logged in state](https://github.com/tinyfish-io/agentql/tree/main/examples/save_and_load_authenticated_session)
-- [Run AgentQL in Stealth Mode](https://github.com/tinyfish-io/agentql/tree/main/examples/stealth_mode)
-- [Wait for page to load](https://github.com/tinyfish-io/agentql/tree/main/examples/wait_for_entire_page_load)
-- [Collect pricing data from an e-commerce website using AgentQL](https://github.com/tinyfish-io/agentql/tree/main/application_examples/collect_ecommerce_pricing_data)
-- [Perform sentiment analysis](https://github.com/tinyfish-io/agentql/tree/main/application_examples/perform_sentiment_analysis)
-- [Get an element's XPath](https://github.com/tinyfish-io/agentql/tree/main/application_examples/xpath)
-- [Run script online in Google Colaboratory](./examples/run_script_online_in_google_colab)
+#### Data extraction with [`queryData`](https://docs.agentql.com/javascript-sdk/api-references/agentql-page#querydata)
+
+```javascript
+const { wrap, configure } = require("agentql");
+const { chromium } = require("playwright");
+
+configure({ apiKey: process.env.AGENTQL_API_KEY });
+
+async function main() {
+  const browser = await chromium.launch();
+  const page = await wrap(await browser.newPage());
+  await page.goto("https://scrapeme.live/shop/");
+
+  // use your own words to describe what you're looking for
+  const QUERY = `
+  {
+      products[] {
+          name
+          price
+      }
+  }
+  `;
+
+  // query_data returns data from the page
+  const response = await page.queryData(QUERY);
+
+  console.log(response);
+}
+
+main();
+```
+
+#### Automation with [`getByPrompt`](https://docs.agentql.com/javascript-sdk/api-references/agentql-page#getbyprompt) and [`queryElements`](https://docs.agentql.com/javascript-sdk/api-references/agentql-page#queryelements)
+
+```javascript
+const { wrap, configure } = require("agentql");
+const { chromium } = require("playwright");
+
+configure({ apiKey: process.env.AGENTQL_API_KEY });
+
+async function main() {
+  const browser = await chromium.launch();
+  const page = await wrap(await browser.newPage());
+  await page.goto("https://duckduckgo.com");
+
+  // use your own words to describe what you're looking for
+  const QUERY = `
+  {
+      search_box
+      search_button
+  }
+  `;
+
+  // query_elements returns multiple elements to perform operations on
+  const response = await page.queryElements(QUERY);
+
+  await response.search_box.fill("AgentQL");
+  await response.search_button.click();
+
+  // get_by_prompt returns one element to perform operations on based on the content you pass to it
+  const images = page.getByPrompt("images link");
+  await images.click();
+
+  // Used only for demo purposes. It allows you to see the effect of the script.
+  await page.waitForTimeout(10000);
+}
+
+main();
+```
+
+## More examples
+
+### Python
+
+- [Getting started with AgentQL](https://github.com/tinyfish-io/agentql/tree/main/examples/python/first_steps)
+- [Close cookie dialog](https://github.com/tinyfish-io/agentql/tree/main/examples/python/close_cookie_dialog)
+- [Close popup windows (like promotion form)](https://github.com/tinyfish-io/agentql/tree/main/examples/python/close_popup)
+- [Compare product prices across different websites](https://github.com/tinyfish-io/agentql/tree/main/examples/python/compare_product_prices)
+- [Debug AgentQL script](https://github.com/tinyfish-io/agentql/tree/main/examples/python/debug_script)
+- [Get a single element by prompt](https://github.com/tinyfish-io/agentql/tree/main/examples/python/get_by_prompt)
+- [Scroll to load more content ("infinite scroll")](https://github.com/tinyfish-io/agentql/tree/main/examples/python/infinite_scroll)
+- [Use AgentQL with an alternative/open browser](https://github.com/tinyfish-io/agentql/tree/main/examples/python/interact_with_external_or_existing_browser)
+- [Query a list of items](https://github.com/tinyfish-io/agentql/tree/main/examples/python/list_query_usage)
+- [Log into sites with AgentQL](https://github.com/tinyfish-io/agentql/tree/main/examples/python/log_into_sites)
+- [Run script in headless browser](https://github.com/tinyfish-io/agentql/tree/main/examples/python/run_script_in_headless_browser)
+- [Save and reuse logged in state](https://github.com/tinyfish-io/agentql/tree/main/examples/python/save_and_load_authenticated_session)
+- [Run AgentQL in Stealth Mode](https://github.com/tinyfish-io/agentql/tree/main/examples/python/stealth_mode)
+- [Wait for page to load](https://github.com/tinyfish-io/agentql/tree/main/examples/python/wait_for_entire_page_load)
+- [Collect pricing data from an e-commerce website using AgentQL](https://github.com/tinyfish-io/agentql/tree/main/examples/python/collect_ecommerce_pricing_data)
+- [Perform sentiment analysis](https://github.com/tinyfish-io/agentql/tree/main/examples/python/perform_sentiment_analysis)
+- [Get an element's XPath](https://github.com/tinyfish-io/agentql/tree/main/examples/python/xpath)
+- [Run script online in Google Colaboratory](https://github.com/tinyfish-io/agentql/tree/main/examples/python/run_script_online_in_google_colab)
+
+### JavaScript
+
+- [Getting started with AgentQL](https://github.com/tinyfish-io/agentql/tree/main/examples/javascript/first-steps)
+- [Close cookie dialog](https://github.com/tinyfish-io/agentql/tree/main/examples/js/close-cookie-dialog)
+- [Close popup windows (like promotion form)](https://github.com/tinyfish-io/agentql/tree/main/examples/js/close-popup)
+- [Compare product prices across different websites](https://github.com/tinyfish-io/agentql/tree/main/examples/js/compare-product-prices)
+- [Collect pricing data from an e-commerce website](https://github.com/tinyfish-io/agentql/tree/main/examples/js/collect-pricing-data)
+- [Collect YouTube comments](https://github.com/tinyfish-io/agentql/tree/main/examples/js/collect-youtube-comments)
+- [Get a single element by prompt](https://github.com/tinyfish-io/agentql/tree/main/examples/js/get-by-prompt)
+- [Use AgentQL with an alternative/open browser](https://github.com/tinyfish-io/agentql/tree/main/examples/js/interact-with-external-or-existing-browser)
+- [Perform sentiment analysis](https://github.com/tinyfish-io/agentql/tree/main/examples/js/perform-sentiment-analysis)
+- [Query a list of items](https://github.com/tinyfish-io/agentql/tree/main/examples/js/list-query-usage)
+- [Log into sites with AgentQL](https://github.com/tinyfish-io/agentql/tree/main/examples/js/log-into-sites)
+- [Run script in headless browser](https://github.com/tinyfish-io/agentql/tree/main/examples/js/run-script-in-headless-browser)
+- [Save and reuse logged in state](https://github.com/tinyfish-io/agentql/tree/main/examples/js/save-and-load-authenticated-session)
+- [Submit a form](https://github.com/tinyfish-io/agentql/tree/main/examples/js/submit-form)
+- [Run AgentQL in Stealth Mode](https://github.com/tinyfish-io/agentql/tree/main/examples/js/stealth-mode)
+- [Wait for page to load](https://github.com/tinyfish-io/agentql/tree/main/examples/js/wait-for-entire-page-load)
+- [Get an element's XPath](https://github.com/tinyfish-io/agentql/tree/main/examples/js/xpath)
 
 For comprehensive guides and API references, check out our [official documentation](https://docs.agentql.com).
 
