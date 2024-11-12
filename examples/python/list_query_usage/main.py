@@ -6,14 +6,14 @@ import agentql
 from playwright.sync_api import sync_playwright
 
 # Set the URL to the desired website
-URL = "https://getyourfckingsocks.com/shop"
+URL = "https://scrapeme.live/shop"
 
 # Define the queries to interact with the page
 QUERY = """
 {
-    socks[]
+    products[]
     {
-        style_name
+        name
         price
     }
 }
@@ -34,13 +34,13 @@ def main():
         script_dir = os.path.dirname(os.path.abspath(__file__))
 
         # Create path to the csv file
-        csv_file_path = os.path.join(script_dir, "socks_data.csv")
+        csv_file_path = os.path.join(script_dir, "product_data.csv")
 
         # Write the data to a csv file
         with open(csv_file_path, "w", encoding="utf-8") as file:
-            file.write("Style Name, Price\n")
-            for sock in response["socks"]:
-                file.write(f"{sock['style_name']},{sock['price']}\n")
+            file.write("Name, Price\n")
+            for sock in response["products"]:
+                file.write(f"{product['name']},{product['price']}\n")
 
 
 if __name__ == "__main__":
