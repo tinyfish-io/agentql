@@ -215,7 +215,6 @@ main();
 | Close Cookie Dialog | [Example](https://github.com/tinyfish-io/agentql/tree/main/examples/js/close-cookie-dialog) | [Example](https://github.com/tinyfish-io/agentql/tree/main/examples/python/close_cookie_dialog) |
 | Close Popup Windows | [Example](https://github.com/tinyfish-io/agentql/tree/main/examples/js/close-popup) | [Example](https://github.com/tinyfish-io/agentql/tree/main/examples/python/close_popup) |
 | Compare Product Prices | [Example](https://github.com/tinyfish-io/agentql/tree/main/examples/js/compare-product-prices) | [Example](https://github.com/tinyfish-io/agentql/tree/main/examples/python/compare_product_prices) |
-| Debug Script | N/A | [Example](https://github.com/tinyfish-io/agentql/tree/main/examples/python/debug_script) |
 | Get Element by Prompt | [Example](https://github.com/tinyfish-io/agentql/tree/main/examples/js/get-by-prompt) | [Example](https://github.com/tinyfish-io/agentql/tree/main/examples/python/get_by_prompt) |
 | Infinite Scroll | N/A | [Example](https://github.com/tinyfish-io/agentql/tree/main/examples/python/infinite_scroll) |
 | External Browser Integration | [Example](https://github.com/tinyfish-io/agentql/tree/main/examples/js/interact-with-external-or-existing-browser) | [Example](https://github.com/tinyfish-io/agentql/tree/main/examples/python/interact_with_external_or_existing_browser) |
