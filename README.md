@@ -93,7 +93,7 @@ with sync_playwright() as playwright, playwright.chromium.launch(headless=False)
     {
         products[] {
             name
-            price
+            price(integer)
         }
     }
     """
@@ -155,7 +155,7 @@ async function main() {
   {
       products[] {
           name
-          price
+          price(integer)
       }
   }
   `;
