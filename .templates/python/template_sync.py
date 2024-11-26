@@ -46,7 +46,7 @@ def fetch_data(page: Page):
     data_query = """
     {
         products[] {
-            price
+            price(integer)
         }
     }
     """

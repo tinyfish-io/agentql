@@ -47,7 +47,7 @@ async function fetchData(context, sessionUrl) {
   {
       products[] {
           name
-          price
+          price(integer)
       }
   }
   `;

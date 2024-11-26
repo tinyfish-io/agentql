@@ -42,6 +42,7 @@ AgentQL is an AI-powered query language for scraping web sites and automating wo
 - **[AgentQL Query Language](https://docs.agentql.com/agentql-query/query-intro)** lets you define queries with natural language.
 - **[Playground](https://playground.agentql.com/)** for playing with AgentQL lets you export python scripts and optimize queries with prompts.
 
+
 ## Examples
 
 | Example Name | JavaScript | Python |

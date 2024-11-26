@@ -54,7 +54,7 @@ async def fetch_data(context: BrowserContext, session_url):
     {
         products[] {
             name
-            price
+            price(integer)
         }
     }
     """

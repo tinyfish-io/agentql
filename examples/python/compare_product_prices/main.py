@@ -11,7 +11,7 @@ NINTENDO_URL = "https://www.nintendo.com/us/store/products/nintendo-switch-oled-
 # Define the queries to get the product price
 PRODUCT_INFO_QUERY = """
 {
-    nintendo_switch_price
+    nintendo_switch_price(integer)
 }
 """
 

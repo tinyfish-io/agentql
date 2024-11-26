@@ -29,7 +29,7 @@ async def _do_extract_pricing_data(page: Page) -> list:
             name
             model
             sku
-            price
+            price(integer)
         }
     }"""
     pricing_data = await page.query_data(query)

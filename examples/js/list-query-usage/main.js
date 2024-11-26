@@ -19,7 +19,7 @@ const fs = require('fs');
       products[]
       {
           product_name
-          price
+          price(integer)
       }
   }
   `;

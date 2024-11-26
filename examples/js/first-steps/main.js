@@ -16,7 +16,7 @@ const PRODUCT_DATA_QUERY = `
     price_currency
     products[] {
         name
-        price
+        price(integer)
     }
 }
 `;

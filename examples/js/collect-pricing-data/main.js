@@ -14,7 +14,7 @@ async function doExtractPricingData(page) {
             name
             model
             sku
-            price
+            price(integer)
         }
     }`;
   const pricingData = await page.queryData(QUERY);

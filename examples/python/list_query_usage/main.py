@@ -14,7 +14,7 @@ QUERY = """
     products[]
     {
         name
-        price
+        price(integer)
     }
 }
 """
