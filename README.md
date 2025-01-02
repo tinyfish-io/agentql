@@ -1,7 +1,15 @@
 <div align="center">
 
-<h1>AgentQL</h1>
-<h2>AI-powered web scraping and automation</h2>
+<h1 align="center">
+    <a href="https://agentql.com">
+        <picture>
+          <source media="(prefers-color-scheme: dark)" srcset="https://github.com/user-attachments/assets/972700ef-b4e6-49e9-a282-40994d9cb823">
+          <img alt="AgentQL" src="https://github.com/user-attachments/assets/893d8117-258c-4cf9-8fd8-5c850586e8d4" width="500">
+        </picture>
+    </a>
+</h1>
+
+<h2>AgentQL connects LLMs and AI agents to the entire web</h2>
 
 <p align="center">
   <a href="https://twitter.com/agentql"><img src="https://img.shields.io/badge/Follow%20on%20X-000000?style=for-the-badge&logo=x&logoColor=white" alt="Follow on X" /></a>
@@ -19,7 +27,7 @@
 
 ## What is AgentQL?
 
-AgentQL is an AI-powered query language for scraping web sites and automating workflows. It uses natural language queries to pinpoint data and elements on any web page, including authenticated and dynamically generated content. Users can define structured data output and apply transforms within queries. AgentQL's natural language selectors find elements intuitively based on the content of the web page and work across similar web sites, self-healing as UI changes over time.
+AgentQL is a suite of tools for extracting data and automating workflows on live web sites featuring an AI-powered query language, Python and JavaScript SDKs, a browser-based debugger, and a REST API endpoint. It uses natural language queries to pinpoint data and elements on any web page, including authenticated and dynamically generated content. Users can define structured data output and apply transforms within queries. AgentQL's natural language selectors find elements intuitively based on the content of the web page and work across similar web sites, self-healing as UI changes over time.
 
 [Get started in 5 minutes with our quick start!](https://docs.agentql.com/quick-start)
 
