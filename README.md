@@ -74,7 +74,8 @@ AgentQL is a suite of tools for extracting data and automating workflows on live
 | Collect YouTube Comments                | [Example](https://github.com/tinyfish-io/agentql/tree/main/examples/js/collect-youtube-comments)                   | N/A                                                                                                                    |
 | Use Humanlike Behavior to Avoid Antibot | [Example](https://github.com/tinyfish-io/agentql/tree/main/examples/js/humanlike-antibot)                          | [Example](https://github.com/tinyfish-io/agentql/tree/main/examples/python/humanlike-antibot)                          |
 | Run in Google Colab                     | N/A                                                                                                                | [Example](https://github.com/tinyfish-io/agentql/tree/main/examples/python/run_script_online_in_google_colab)          |
-| Collect Ecommerce Paginated Data        | N/A                                                                                                                | [Example](https://github.com/tinyfish-io/agentql/tree/main/examples/python/collect_paginated_ecommerce_listing_data) |
+| Collect Ecommerce Paginated Data        | N/A                                                                                                                | [Example](https://github.com/tinyfish-io/agentql/tree/main/examples/python/collect_paginated_ecommerce_listing_data)   |
+| Collect Paginated Data From HackerNews  | N/A                                                                                                                | [Example](https://github.com/tinyfish-io/agentql/tree/main/examples/python/collect_paginated_news_headlines)           |
 
 For comprehensive guides and API references, check out our [official documentation](https://docs.agentql.com).
 
