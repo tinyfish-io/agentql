@@ -5,18 +5,6 @@ async function pressKeyAndScroll(page) {
     page.keyboard.press("End");
 }
 
-async function mouseWheelScroll(page) {
-    const viewportHeight = page.evaluate(() => window.visualViewport.height);
-    const bodyHeight = page.evaluate(() => document.body.scrollHeight);
-    let scrollY = page.evaluate(() => window.scrollY);
-
-    while (scrollY < bodyHeight) {
-        scrollY += viewportHeight;
-        page.mouse.wheel(0, viewportHeight);
-        await new Promise(resolve => setTimeout(resolve, 100));
-    }
-}
-
 (async () => {
     // Configure the AgentQL API key
     configure({
@@ -36,7 +24,7 @@ async function mouseWheelScroll(page) {
         post_headers[]
     }
     `;
-    
+
     await page.waitForLoadState();
 
     const numExtraPagesToLoad = 3;
