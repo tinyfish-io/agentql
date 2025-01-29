@@ -39,7 +39,7 @@ def main():
         # Write the data to a csv file
         with open(csv_file_path, "w", encoding="utf-8") as file:
             file.write("Name, Price\n")
-            for sock in response["products"]:
+            for product in response["products"]:
                 file.write(f"{product['name']},{product['price']}\n")
 
 
