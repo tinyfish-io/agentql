@@ -12,7 +12,9 @@ const fs = require('fs');
   const browser = await chromium.launch({ headless: false });
   const page = await wrap(await browser.newPage()); // Wraps the Playwright Page to access AgentQL's features.
 
-  await page.goto('https://www.google.com/maps/search/boba+tea/@37.4400289,-122.1653309,14z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MDIxMS4wIKXMDSoASAFQAw%3D%3D');
+  await page.goto(
+    'https://www.google.com/maps/search/boba+tea/@37.4400289,-122.1653309,14z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MDIxMS4wIKXMDSoASAFQAw%3D%3D',
+  );
 
   const QUERY = `
   {
