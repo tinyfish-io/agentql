@@ -77,6 +77,7 @@ AgentQL is a suite of tools for extracting data and automating workflows on live
 | Collect Ecommerce Paginated Data        | [Example](https://github.com/tinyfish-io/agentql/tree/main/examples/js/collect-paginated-ecommerce-data)           | [Example](https://github.com/tinyfish-io/agentql/tree/main/examples/python/collect_paginated_ecommerce_listing_data)   |
 | Collect Paginated Data From HackerNews  | [Example](https://github.com/tinyfish-io/agentql/tree/main/examples/js/collect-paginated-news-headlines)           | [Example](https://github.com/tinyfish-io/agentql/tree/main/examples/python/collect_paginated_news_headlines)           |
 | Scrape Google Maps and save as a CSV    | [Example](https://github.com/tinyfish-io/agentql/tree/main/examples/js/maps_scraper)                               | [Example](https://github.com/tinyfish-io/agentql/tree/main/examples/python/maps_scraper)                               |
+| News Aggregator                         | [Example](https://github.com/tinyfish-io/agentql/tree/main/examples/js/news-aggregator)                            | [Example](https://github.com/tinyfish-io/agentql/tree/main/examples/python/news-aggregator)                            |
 
 For comprehensive guides and API references, check out our [official documentation](https://docs.agentql.com).
 
