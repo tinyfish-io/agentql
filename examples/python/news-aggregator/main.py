@@ -82,7 +82,7 @@ async def fetch_data(context: BrowserContext, session_url):
             file.writelines(new_lines)
 
     # Update progress
-    LOG.info("Fetched items from %s...", session_url)
+    log.info("Fetched items from %s...", session_url)
 
 
 if __name__ == "__main__":
