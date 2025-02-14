@@ -51,7 +51,7 @@ async def main():
         )  
         
      # Update progress
-    LOG.info("All done! CSV is here: %s...", CSV_FILE_PATH)
+    log.info("All done! CSV is here: %s...", CSV_FILE_PATH)
 
 
 async def fetch_data(context: BrowserContext, session_url):
