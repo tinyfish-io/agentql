@@ -81,7 +81,7 @@ async def fetch_data(context: BrowserContext, session_url):
         with open(CSV_FILE_PATH, "a", encoding="utf-8") as file:
             file.writelines(new_lines)
 
-    ## Update progress
+    # Update progress
     LOG.info("Fetched items from %s...", session_url)
 
 
