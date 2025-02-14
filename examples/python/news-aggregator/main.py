@@ -10,7 +10,7 @@ import agentql
 
 # Set up logging
 logging.basicConfig(level=logging.INFO)
-LOG = logging.getLogger(__name__)
+log = logging.getLogger(__name__)
 
 # Define the queries to interact with the page
 QUERY = """
