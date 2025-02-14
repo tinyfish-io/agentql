@@ -48,7 +48,9 @@ async def main():
         # Open multiple tabs in the same browser context to fetch data concurrently
         await asyncio.gather(
             *(fetch_data(context, url) for url in WEBSITE_URLS)
-        )  ## Update progress
+        )  
+        
+     # Update progress
     LOG.info("All done! CSV is here: %s...", CSV_FILE_PATH)
 
 
