@@ -1,4 +1,10 @@
-# Example script: run the script in headless browser with AgentQL
+---
+title: Run a script in headless browser
+description: Run the script in a headless browser with AgentQL.
+date: 2025-03-05
+---
+
+# Example script: running a script in headless browser with AgentQL
 
 This example demonstrates how to run the script in headless browser.
 

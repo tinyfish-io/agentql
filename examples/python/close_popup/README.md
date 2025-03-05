@@ -1,3 +1,9 @@
+---
+title: Closing popup windows
+description: Close popup windows (like promotion forms) with AgentQL.
+date: 2025-03-05
+---
+
 # Example script: closing popup windows with AgentQL
 
 This example demonstrates how to close popup windows (like promotion form) with AgentQL.

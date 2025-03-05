@@ -1,3 +1,9 @@
+---
+title: Compare product price across multiple websites
+description: Compare product prices across websites with query_data() method with AgentQL.
+date: 2025-03-05
+---
+
 # Example script: comparing product price across websites with AgentQL
 
 This example demonstrates how to compare product prices across websites with queryData() method.

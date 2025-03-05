@@ -1,3 +1,9 @@
+---
+title: Submit form
+description: Submit form with AgentQL.
+date: 2025-03-05
+---
+
 # Example script: Automating form submission using AgentQL
 
 This is an example of automating form submission on a website using AgentQL.

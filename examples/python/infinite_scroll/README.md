@@ -1,3 +1,9 @@
+---
+title: Load additional content by scrolling
+description: Load additional content on pages that load content based on scroll position.
+date: 2025-03-05
+---
+
 # Example script: load additional content on page by scrolling
 
 This example demonstrates how to load additional content on pages that load content based on scroll position

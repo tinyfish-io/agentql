@@ -1,3 +1,9 @@
+---
+title: Get single element by prompt
+description: Use AgentQL's get_by_prompt method to retrieve an element and interact with it.
+date: 2025-03-05
+---
+
 # Example script: interact with elements leveraging getByPrompt method
 
 This is an example of levergaing getByPrompt() method to retrieve an element and interact with it using AgentQL.

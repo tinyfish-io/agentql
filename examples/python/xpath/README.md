@@ -1,4 +1,10 @@
-# Example script: get XPath of elements fetched with AgentQL
+---
+title: Get an element's XPath
+description: Get XPath of an element that was fetched with AgentQL.
+date: 2025-03-05
+---
+
+# Example script: getting an element's XPath with AgentQL
 
 This example demonstrates how to get XPath of an element that was fetched with AgentQL.
 

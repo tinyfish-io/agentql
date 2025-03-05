@@ -1,3 +1,9 @@
+---
+title: Collecting pricing data
+description: Collect pricing data from e-commerce websites using AgentQL.
+date: 2025-03-05
+---
+
 # Example script: collecting pricing data with AgentQL from e-commerce websites
 
 This is an example of how to collect pricing data from e-commerce website using AgentQL.

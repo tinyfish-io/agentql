@@ -1,3 +1,9 @@
+---
+title: Run script in a stealth mode
+description: How to apply different techniques to lower the risk of being detected by an anti-bot system.
+date: 2025-03-05
+---
+
 # Stealth mode: Running AgentQL in stealth mode and avoiding bot detection
 
 This example demonstrates how to lower the risk of being detected by a anti-bot system by running AgentQL in stealth mode.
