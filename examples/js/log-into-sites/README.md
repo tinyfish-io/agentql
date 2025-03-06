@@ -1,3 +1,9 @@
+---
+title: Login to sites with AgentQL
+description: Use AgentQL to interact with login forms and log into websites.
+updated: 2025-03-05
+---
+
 # Example script: login into websites
 
 This is an example shows how to login into websites by retrieving and interacting with web elements in AgentQL.

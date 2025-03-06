@@ -1,3 +1,9 @@
+---
+title: Perform sentiment analysis
+description: Perform sentiment analysis on YouTube comments with AgentQL and OpenAI's GPT-3.5 model.
+updated: 2025-03-05
+---
+
 # Example script: perform sentiment analysis with AgentQL
 
 This is an example shows how to return news headlines from a selection of URLs and save the results to a CSV file.

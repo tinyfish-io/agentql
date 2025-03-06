@@ -1,3 +1,9 @@
+---
+title: Collect paginated news headlines
+description: Collect news headlines across multiple paginated webpages.
+updated: 2025-03-05
+---
+
 # Example script: Collect news headlines across multiple paginated webpages
 
 This example demonstrates how to collect HackerNews headlines across multiple paginated webpages by specifying query and number of pages to collect.

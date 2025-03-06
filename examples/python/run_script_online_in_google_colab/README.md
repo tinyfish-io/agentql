@@ -1,3 +1,10 @@
+---
+title: Google Colab
+description: Run AgentQL script in online development environment like Google Colaboratory.
+updated: 2025-03-05
+featured: true
+---
+
 # Example script: run AgentQL script in online development environment
 
 This example demonstrates how to run AgentQL script in online development environment like [Google Colaboratory](https://colab.research.google.com/).

@@ -1,3 +1,9 @@
+---
+title: News Aggregator to CSV
+description: Return news headlines from a selection of URLs and save the results to a CSV file.
+updated: 2025-03-05
+---
+
 # Example script: News Aggregator to CSV
 
 This is an example shows how to return news headlines from a selection of URLs and save the results to a CSV file.

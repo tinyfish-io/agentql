@@ -1,3 +1,9 @@
+---
+title: Collect paginated bookstore listing data
+description: Collect paginated bookstore listing data with AgentQL.
+updated: 2025-03-05
+---
+
 # Example script: Collect ecommerce data across multiple paginated webpages
 
 This example demonstrates how to collect ecommerce data by stepping through multiple paginated webpages.
