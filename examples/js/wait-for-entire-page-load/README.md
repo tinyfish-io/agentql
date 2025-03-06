@@ -1,7 +1,7 @@
 ---
 title: Wait for page to load
 description: Wait for the page to load completely before querying the page with AgentQL.
-date: 2025-03-05
+updated: 2025-03-05
 ---
 
 # Example script: wait for page to load with AgentQL

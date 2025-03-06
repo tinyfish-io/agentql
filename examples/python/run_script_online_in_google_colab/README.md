@@ -1,7 +1,7 @@
 ---
 title: Google Colab
 description: Run AgentQL script in online development environment like Google Colaboratory.
-date: 2025-03-05
+updated: 2025-03-05
 featured: true
 ---
 

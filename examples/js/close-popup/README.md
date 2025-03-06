@@ -1,7 +1,7 @@
 ---
 title: Close popup windows
 description: Close modals like promotional forms and banners with AgentQL.
-date: 2025-03-05
+updated: 2025-03-05
 ---
 
 # Example script: closing popup windows with AgentQL

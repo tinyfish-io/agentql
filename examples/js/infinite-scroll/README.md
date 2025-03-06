@@ -1,7 +1,7 @@
 ---
 title: Scroll to load more content
 description: How to load additional content on pages that load content based on scroll position (aka 'infinite scroll').
-date: 2025-03-05
+updated: 2025-03-05
 ---
 
 # Example script: load additional content on page by scrolling

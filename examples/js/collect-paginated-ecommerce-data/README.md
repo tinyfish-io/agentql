@@ -1,7 +1,7 @@
 ---
 title: Collect paginated bookstore listing data
 description: Collect paginated bookstore listing data with AgentQL.
-date: 2025-03-05
+updated: 2025-03-05
 ---
 
 # Example script: Collect ecommerce data across multiple paginated webpages

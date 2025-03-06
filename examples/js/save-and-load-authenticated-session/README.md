@@ -1,7 +1,7 @@
 ---
 title: Save and load authenticated state
 description: Save and load an authenticated state (i.e. signed-in state) with AgentQL.
-date: 2025-03-05
+updated: 2025-03-05
 ---
 
 # Example script: save and load authenticated state with AgentQL

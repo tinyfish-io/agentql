@@ -1,7 +1,7 @@
 ---
 title: Login to sites with AgentQL
 description: Use AgentQL to interact with login forms and log into websites.
-date: 2025-03-05
+updated: 2025-03-05
 ---
 
 # Example script: logging into sites with AgentQL

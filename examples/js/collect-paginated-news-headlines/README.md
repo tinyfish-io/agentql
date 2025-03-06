@@ -1,7 +1,7 @@
 ---
 title: Collect paginated data from HackerNews
 description: Collect paginated data from HackerNews with AgentQL.
-date: 2025-03-05
+updated: 2025-03-05
 ---
 
 # Example script: Collect news headlines across multiple paginated webpages

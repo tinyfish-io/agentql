@@ -1,7 +1,7 @@
 ---
 title: Use AgentQL with an already open browser
 description: If you don't want to use Playwright's default browser, you can bring your own.
-date: 2025-03-05
+updated: 2025-03-05
 ---
 
 # Example script: interact with external or existing browser

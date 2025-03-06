@@ -1,7 +1,7 @@
 ---
 title: Use humanlike mouse movement to avoid antibot
 description: Use humanlike mouse movement to avoid antibot when using AgentQL.
-date: 2025-03-05
+updated: 2025-03-05
 ---
 
 # Example script: use humanlike mouse movement to avoid antibot

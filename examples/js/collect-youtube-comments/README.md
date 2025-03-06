@@ -1,7 +1,7 @@
 ---
 title: Interact with YouTube and extract video information
 description: Interact with YouTube website and extract video information using AgentQL.
-date: 2025-03-05
+updated: 2025-03-05
 ---
 
 # Example script: interacting with YouTube website and extracting video information using AgentQL

@@ -1,7 +1,7 @@
 ---
 title: Compare product prices
 description: Compare product prices across websites with AgentQL.
-date: 2025-03-05
+updated: 2025-03-05
 ---
 
 # Example script: comparing product price across websites with AgentQL

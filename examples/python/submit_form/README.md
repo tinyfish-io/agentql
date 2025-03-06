@@ -1,7 +1,7 @@
 ---
 title: Submit form
 description: Submit form with AgentQL.
-date: 2025-03-05
+updated: 2025-03-05
 ---
 
 # Example script: Filling out and submitting a form using AgentQL

@@ -1,7 +1,7 @@
 ---
 title: Collect paginated news headlines
 description: Collect news headlines across multiple paginated webpages.
-date: 2025-03-05
+updated: 2025-03-05
 ---
 
 # Example script: Collect news headlines across multiple paginated webpages

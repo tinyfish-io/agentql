@@ -1,7 +1,7 @@
 ---
 title: Close a cookie dialog
 description: Close a site's dialog for rejecting/accepting cookies with AgentQL.
-date: 2025-03-05
+updated: 2025-03-05
 ---
 
 # Example script: close a cookie dialog with AgentQL

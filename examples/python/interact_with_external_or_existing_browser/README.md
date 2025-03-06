@@ -1,7 +1,7 @@
 ---
 title: Interact with an external browser
 description: Interact with an external or existing browser with AgentQL.
-date: 2025-03-05
+updated: 2025-03-05
 ---
 
 # Example script: interact with an external or existing browser with AgentQL
