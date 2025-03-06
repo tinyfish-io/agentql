@@ -2,6 +2,7 @@
 title: Query a list of items
 description: How to query a list of items on the page with AgentQL.
 date: 2025-03-05
+featured: true
 ---
 
 # Example script: querying a list of items with AgentQL
