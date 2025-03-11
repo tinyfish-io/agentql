@@ -1,3 +1,9 @@
+---
+title: Query a list of items
+description: Query a list of items on the page with AgentQL.
+updated: 2025-03-05
+---
+
 # Example script: querying a list of items with AgentQL
 
 This example demonstrates how to query a list of items on the page.

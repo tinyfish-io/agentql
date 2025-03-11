@@ -1,3 +1,9 @@
+---
+title: Use AgentQL with an already open browser
+description: If you don't want to use Playwright's default browser, you can bring your own.
+updated: 2025-03-05
+---
+
 # Example script: interact with external or existing browser
 
 This is an example shows how to interact with external or existing browser by retrieving and interacting with web elements in AgentQL.

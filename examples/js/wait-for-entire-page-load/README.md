@@ -1,3 +1,9 @@
+---
+title: Wait for page to load
+description: Wait for the page to load completely before querying the page with AgentQL.
+updated: 2025-03-05
+---
+
 # Example script: wait for page to load with AgentQL
 
 This example demonstrates how to wait for the page to load completely before querying the page.
