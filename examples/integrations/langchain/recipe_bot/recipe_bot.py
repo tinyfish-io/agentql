@@ -41,7 +41,7 @@ async def main():
     )
 
     prompt = """
-    Search for an easy and quick recipe for baking oatmeal cookies. Click on the link for the oatmeal cookie recipe, and in the URL link, extract the ingredients needed and instructions and put it in a CSV file.
+    Search for an easy and quick recipe for baking oatmeal cookies. Click on the link for the oatmeal cookie recipe, and in the URL link, extract the ingredients needed and instructions and put it in a CSV file 'oatmeal_cookie_recipe.csv'.
     """
 
     # Execute agent
