@@ -1,4 +1,4 @@
-# Recipe
+# Recipe Bot
 
 This agent searches for a quick and simple oatmeal cookie recipe, navigates to a website with the recipe, collects the recipe ingredients and instructions, and writes it in a new CSV file `oatmeal_cookie_recipe.csv`.
 
