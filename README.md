@@ -46,6 +46,7 @@ AgentQL is a suite of tools for extracting data and automating workflows on live
 - **[Python SDK](https://docs.agentql.com/python-sdk/installation)** for running automation and scraping scripts with AgentQL queries in Python.
 - **[JavaScript SDK](https://docs.agentql.com/javascript-sdk/installation)** for running automation and scraping scripts with AgentQL queries in JavaScript.
 - **[REST API](https://docs.agentql.com/rest-api/api-reference)** for executing queries without an SDK.
+- **[Integrations](https://docs.agentql.com/integrations)** with agent frameworks and automation tools like Langchain and Zapier and our MCP server.
 - **[Debugger Browser Extension](https://chromewebstore.google.com/detail/agentql-debugger/idnejmodeepdobpinkkgpkeabkabhhej)** lets you debug and finesse queries in real-time on live sites.
 - **[AgentQL Query Language](https://docs.agentql.com/agentql-query/query-intro)** lets you define queries with natural language.
 - **[Playground](https://playground.agentql.com/)** for playing with AgentQL lets you export python scripts and optimize queries with prompts.
