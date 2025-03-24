@@ -4,6 +4,7 @@
 # https://github.com/tinyfish-io/github-control
 
 .github/workflows/** @tinyfish-io/security_team
+osv-scanner.toml @tinyfish-io/security_team
 
 
 
