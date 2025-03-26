@@ -1,7 +1,7 @@
 ---
 name: OSV-Scanner PR Scan
 
-on: # yamllint disable-line rule:truthy
+on:  # yamllint disable-line rule:truthy
   pull_request:
     branches: [main]
   merge_group:
