@@ -17,10 +17,6 @@ permissions:
 
 jobs:
   vulnerability-check:
-    steps:
-      - uses: actions/checkout@v4
-
-      - uses: "google/osv-scanner-action/.github/workflows/osv-scanner-reusable.yml@v1.9.2"
-        name: Detect vulnerabilities
-        with:
-          upload-sarif: false
+    uses: "google/osv-scanner-action/.github/workflows/osv-scanner-reusable.yml@v1.9.2"
+    with:
+      upload-sarif: false
