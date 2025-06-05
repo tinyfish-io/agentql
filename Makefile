@@ -30,4 +30,3 @@ setup-pre-commit:
 init: setup-pre-commit check-trufflehog
 	pip install pre-commit
 	pre-commit install
-
