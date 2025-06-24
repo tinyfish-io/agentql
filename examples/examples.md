@@ -4,7 +4,7 @@ title: AgentQL Examples
 
 ## Overview
 
-Browser our opensource collection of useful example scripts and get started extracting data, scraping, and automating.
+Browse our opensource collection of useful example scripts and get started extracting data, scraping, and automating.
 
 ## Examples
 
