@@ -1,12 +1,12 @@
 ---
-title: Interact with an external browser
-description: Interact with an external or existing browser with AgentQL.
-updated: 2025-03-05
+title: Interact with an existing browser
+description: Interact with an existing browser with AgentQL.
+updated: 2025-06-24
 ---
 
-# Example script: interact with an external or existing browser with AgentQL
+# Example script: interact with an existing browser with AgentQL
 
-This example demonstrates how to interact with an external or existing browser with AgentQL.
+This example demonstrates how to interact with an existing browser with AgentQL.
 
 ## Run the script
 
