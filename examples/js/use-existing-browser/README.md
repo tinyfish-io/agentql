@@ -1,17 +1,17 @@
 ---
-title: Interact with an existing browser
-description: Interact with an existing browser with AgentQL.
+title: Use existing browser with AgentQL
+description: If you don't want to use Playwright's default browser, you can bring your own.
 updated: 2025-06-24
 ---
 
-# Example script: interact with an existing browser with AgentQL
+# Example script: Use existing browser with AgentQL
 
-This example demonstrates how to interact with an existing browser with AgentQL.
+This example shows how to interact with existing browser by retrieving and interacting with web elements in AgentQL.
 
 ## Run the script
 
-- [Install AgentQL SDK](https://docs.agentql.com/installation/sdk-installation)
-- Save this Python file locally as **main.py**
+- [Install AgentQL SDK](https://docs.agentql.com/javascript-sdk/installation)
+- Save this JavaScript file locally as **main.js**
 - Close your Google Chrome application if it is open.
 - If you're using **Mac**, open the terminal and run the following command:
 
@@ -28,12 +28,13 @@ chrome.exe --remote-debugging-port=9222
 **Make sure to replace `chrome.exe` with the path to your Chrome executable if it's not already in your system's PATH.**
 
 - In the browser window that's opened, select the Google profile you would like to use for this session.
-- In `main.py`, replace variable `WEBSOCKET_URL`'s placeholder value with the actual WebSocket URL returned in terminal or command prompt. The URL should be in the format of `ws://127.0.0.1:9222/devtools/browser/387adf4c-243f-4051-a181-46798f4a46f4`.
+
+- In **main.js**, replace variable `WEBSOCKET_URL`'s placeholder value with the actual WebSocket URL returned in terminal or command prompt. The URL should be in the format of `ws://127.0.0.1:9222/devtools/browser/387adf4c-243f-4051-a181-46798f4a46f4`.
 
 - Run the following command from the project's folder:
 
 ```bash
-python3 main.py
+node main.js
 ```
 
 - If you want to learn how to work with open pages, navigate to [Scrapeme website](https://scrapeme.live/shop/Charmander/) within the browser, and use `fetch_data_from_open_website_page()` method in the script to fetch data from the page.

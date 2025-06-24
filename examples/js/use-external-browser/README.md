@@ -4,9 +4,9 @@ description: Browser is hosted remotely - you connect to it over CDP.
 updated: 2025-06-24
 ---
 
-# Example script: interact with an external AgentQL Chrome Browser (Tetra)
+# Example script: Use external browser with AgentQL
 
-This example demonstrates how to interact with an external AgentQL Chrome Browser (Tetra).
+This example demonstrates how to use external browser with AgentQL.
 
 ## Run the script
 
