@@ -1,7 +1,8 @@
 /**
  * This example demonstrates how to interact with an external browser with AgentQL.
  */
-import { UserAgentPreset, createBrowserSession, wrap } from 'agentql';
+import { wrap } from 'agentql';
+import { UserAgentPreset, createBrowserSession } from 'agentql/tools';
 import { chromium } from 'playwright';
 
 const URL = 'https://scrapeme.live/shop';
