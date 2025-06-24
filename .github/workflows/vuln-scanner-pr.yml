@@ -17,4 +17,5 @@ jobs:
   vulnerability-check:
     uses: "google/osv-scanner-action/.github/workflows/osv-scanner-reusable.yml@v1.9.2"
     with:
+      scan-args: --config osv-scanner.toml
       upload-sarif: false
