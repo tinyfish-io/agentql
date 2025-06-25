@@ -1,9 +1,9 @@
-"""This example demonstrates how to interact with an external or existing browser with AgentQL."""
+"""This example demonstrates how to interact with an existing browser with AgentQL."""
 
 import agentql
 from playwright.sync_api import sync_playwright
 
-# The URL of the external or existing browser you wish to connect.
+# The URL of the existing browser you wish to connect.
 WEBSOCKET_URL = "http://localhost:9222"
 
 URL = "https://scrapeme.live/shop"

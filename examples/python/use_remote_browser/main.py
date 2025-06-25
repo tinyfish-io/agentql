@@ -1,4 +1,4 @@
-"""This example demonstrates how to interact with an external browser with AgentQL."""
+"""This example demonstrates how to interact with an remote browser with AgentQL."""
 
 import asyncio
 
@@ -31,7 +31,7 @@ async def get_remote_browser_url() -> str:
     return cdp_url
 
 
-async def run_in_external_browser():
+async def run_in_remote_browser():
     """This function demonstrates how to open and interact with a new page using remote browser."""
     browser_url = await get_remote_browser_url()
     async with async_playwright() as p:
@@ -58,4 +58,4 @@ async def run_in_external_browser():
 
 
 if __name__ == "__main__":
-    asyncio.run(run_in_external_browser())
+    asyncio.run(run_in_remote_browser())
