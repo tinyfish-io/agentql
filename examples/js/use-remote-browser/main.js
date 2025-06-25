@@ -1,5 +1,5 @@
 /**
- * This example demonstrates how to interact with an external browser with AgentQL.
+ * This example demonstrates how to interact with an remote browser with AgentQL.
  */
 import { wrap } from 'agentql';
 import { UserAgentPreset, createBrowserSession } from 'agentql/tools';
@@ -28,7 +28,7 @@ async function getRemoteBrowserUrl() {
   return cdpUrl;
 }
 
-async function runInExternalBrowser() {
+async function runInRemoteBrowser() {
   // This function demonstrates how to open and interact with a new page using remote browser
   const browserUrl = await getRemoteBrowserUrl();
 
@@ -55,4 +55,4 @@ async function runInExternalBrowser() {
   await browser.close();
 }
 
-runInExternalBrowser().catch(console.error);
+runInRemoteBrowser().catch(console.error);

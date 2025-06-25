@@ -1,12 +1,12 @@
 ---
-title: Use external browser with AgentQL
+title: Use remote browser with AgentQL
 description: Browser is hosted remotely - you connect to it over CDP.
 updated: 2025-06-24
 ---
 
-# Example script: Use external browser with AgentQL
+# Example script: Use remote browser with AgentQL
 
-This example demonstrates how to use external browser with AgentQL.
+This example demonstrates how to use remote browser with AgentQL.
 
 ## Run the script
 
@@ -18,7 +18,7 @@ This example demonstrates how to use external browser with AgentQL.
 python3 main.py
 ```
 
-Script will take care of allocating AgentQL External Browser, connecting to it and running the AgentQL query.
+Script will take care of allocating AgentQL Remote Browser, connecting to it and running the AgentQL query.
 
 ## Play with the query
 
