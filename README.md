@@ -94,3 +94,7 @@ If you find AgentQL helpful, please consider giving us a star on GitHub! It help
 ## Get in touch
 
 For questions, feedback, or support, join our [Discord community](https://discord.gg/agentql). You can follow us on [GitHub](https://github.com/tinyfish-io/), [Twitter](https://x.com/AgentQL), and [LinkedIn](https://www.linkedin.com/company/95728009)!
+
+---
+
+*This is a test change for demonstrating CodeRabbit integration.*
