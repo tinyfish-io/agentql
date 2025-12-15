@@ -15,7 +15,7 @@ permissions:
 
 jobs:
   vulnerability-check:
-    uses: "google/osv-scanner-action/.github/workflows/osv-scanner-reusable.yml@764c91816374ff2d8fc2095dab36eecd42d61638" # v1.9.2
+    uses: "google/osv-scanner-action/.github/workflows/osv-scanner-reusable.yml@764c91816374ff2d8fc2095dab36eecd42d61638"
     with:
       scan-args: --config osv-scanner.toml
       upload-sarif: false
