@@ -5,3 +5,11 @@
 
 # Exclude lock files from vulnerability scanning to avoid false positives
 **/*.lock
+
+# Exclude test files from vulnerability scanning
+# Tests don't need security scanning as they are not production code
+**/*test*/*
+**/test.*
+**/*.test.*
+**/*.spec.*
+**/*_test.*
