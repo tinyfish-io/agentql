@@ -22,5 +22,9 @@
     "openai": "^4.70.1",
     "playwright": "^1.48.2",
     "playwright-dompath": "^0.0.7"
+  },
+  "overrides": {
+    "axios": ">=1.13.5",
+    "minimatch": "^3.1.3"
   }
 }
