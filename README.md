@@ -39,7 +39,7 @@ AgentQL is a suite of tools for extracting data and automating workflows on live
 - **Natural language selectors** find elements and data anywhere on a site using intuitive queries.
 - **Transforms _and_ extracts** data in your queries.
 - **Works on any page,** public or private, any site, any URL, even behind authentication.
-- **Resiliance to UI changes** means queries work regardless of how a page's structure changes over time.
+- **Resilience to UI changes** means queries work regardless of how a page's structure changes over time.
 
 ### Tools
 
