@@ -15,7 +15,7 @@ playwright-dompath = "^0.0.1"
 httpx = "*"
 
 [tool.poetry.group.dev.dependencies]
-black = "*"
+black = {version = "~=26.3.1", python = ">=3.10"}
 isort = "^5.13.2"
 pylint = "^3.1.0"
 
