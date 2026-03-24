@@ -40,12 +40,10 @@
 # =============================================================================
 
 golden_images:
-
   # ---------------------------------------------------------------------------
   # Node.js
   # ---------------------------------------------------------------------------
   nodejs:
-
     - tier: recommended
       alias: node-24-lts
       image: node:24-bookworm-slim
@@ -55,10 +53,9 @@ golden_images:
       digest_updated: "2026-02-27"
       eol: "2029-04-30"
       description: >
-        Node.js 24 LTS on Debian 12 Bookworm slim. DevOps-managed.
-        Slim variant reduces attack surface vs the full image while retaining
-        native-module compatibility (unlike Alpine/musl). Receives timely Debian
-        security patches for OS-level packages.
+        Node.js 24 LTS on Debian 12 Bookworm slim. DevOps-managed. Slim variant reduces attack surface vs the full image
+        while retaining native-module compatibility (unlike Alpine/musl). Receives timely Debian security patches for
+        OS-level packages.
       use_case: "All Node.js services, CI builds, tooling containers."
 
     - tier: acceptable
@@ -70,9 +67,8 @@ golden_images:
       digest_updated: "2026-02-27"
       eol: "2027-04-30"
       description: >
-        Node.js 22 LTS on Debian 12 Bookworm slim. DEVELOPER-managed.
-        Teams using this image are responsible for OS-level CVE monitoring,
-        patching, and Vanta ticket remediation independently.
+        Node.js 22 LTS on Debian 12 Bookworm slim. DEVELOPER-managed. Teams using this image are responsible for
+        OS-level CVE monitoring, patching, and Vanta ticket remediation independently.
       use_case: "Teams not yet migrated to Node 24 LTS."
       caveats:
         - "Migrate to node-24-lts (recommended) before April 2027 EOL."
@@ -82,7 +78,6 @@ golden_images:
   # Python
   # ---------------------------------------------------------------------------
   python:
-
     - tier: recommended
       alias: python-313
       image: python:3.13-slim-bookworm
@@ -92,9 +87,8 @@ golden_images:
       digest_updated: "2026-02-27"
       eol: "2029-10-31"
       description: >
-        Python 3.13 on Debian 12 Bookworm slim. DevOps-managed.
-        Slim variant minimizes pre-installed packages, reducing the OS-level
-        attack surface while remaining fully pip-compatible.
+        Python 3.13 on Debian 12 Bookworm slim. DevOps-managed. Slim variant minimizes pre-installed packages, reducing
+        the OS-level attack surface while remaining fully pip-compatible.
       use_case: "All Python services, ML workloads, data pipelines, Lambda containers."
 
     - tier: acceptable
@@ -106,9 +100,8 @@ golden_images:
       digest_updated: "2026-02-27"
       eol: "2028-10-31"
       description: >
-        Python 3.12 on Debian 12 Bookworm slim. DEVELOPER-managed.
-        Teams using this image are responsible for OS-level CVE monitoring,
-        patching, and Vanta ticket remediation independently.
+        Python 3.12 on Debian 12 Bookworm slim. DEVELOPER-managed. Teams using this image are responsible for OS-level
+        CVE monitoring, patching, and Vanta ticket remediation independently.
       use_case: "Teams not yet migrated to Python 3.13."
       caveats:
         - "Plan migration to python-313 (recommended) before October 2028 EOL."
@@ -118,7 +111,6 @@ golden_images:
   # Microsoft Playwright (AI web automation)
   # ---------------------------------------------------------------------------
   playwright:
-
     - tier: recommended
       alias: playwright-latest
       image: mcr.microsoft.com/playwright:v1.58.2-noble
@@ -127,9 +119,8 @@ golden_images:
       base_os: Ubuntu 24.04 LTS (Noble Numbat)
       digest_updated: "2026-02-27"
       description: >
-        Microsoft Playwright v1.58.2 on Ubuntu 24.04 LTS (Noble). DevOps-managed.
-        Pre-baked with all browser binaries (Chromium, Firefox, WebKit) and their
-        system-level dependencies. Playwright is the backbone of our AI web
+        Microsoft Playwright v1.58.2 on Ubuntu 24.04 LTS (Noble). DevOps-managed. Pre-baked with all browser binaries
+        (Chromium, Firefox, WebKit) and their system-level dependencies. Playwright is the backbone of our AI web
         automation workflows, enabling agents to interact with the web at scale.
       use_case: "AI web automation workflows, browser-based AI agents."
 
@@ -141,9 +132,8 @@ golden_images:
       base_os: Ubuntu 24.04 LTS (Noble Numbat)
       digest_updated: "2026-02-27"
       description: >
-        Microsoft Playwright v1.54.0 on Ubuntu 24.04 LTS (Noble). DEVELOPER-managed.
-        Teams using this version are responsible for monitoring CVEs and upgrading
-        to the recommended tier.
+        Microsoft Playwright v1.54.0 on Ubuntu 24.04 LTS (Noble). DEVELOPER-managed. Teams using this version are
+        responsible for monitoring CVEs and upgrading to the recommended tier.
       use_case: "AI web automation workflows pinned to Playwright 1.54 pending migration."
       caveats:
         - "Upgrade to playwright-latest (recommended) once workflow compatibility with v1.58 is confirmed."
@@ -160,8 +150,7 @@ metadata:
   maintained_by: "Infrastructure / DevOps Team"
   linear_ticket: https://linear.app/tinyfish/issue/INF-1097
   policy: >
-    All Dockerfiles MUST reference images from this file using the full URI
-    with SHA256 digest (@sha256:...) for build immutability.
-    Floating tags (e.g. :latest, :22, :3.12) are PROHIBITED in production
-    Dockerfiles. This file is updated quarterly or upon critical CVE disclosure.
-    To propose changes, open a PR in github-control referencing INF-1097.
+    All Dockerfiles MUST reference images from this file using the full URI with SHA256 digest (@sha256:...) for build
+    immutability. Floating tags (e.g. :latest, :22, :3.12) are PROHIBITED in production Dockerfiles. This file is
+    updated quarterly or upon critical CVE disclosure. To propose changes, open a PR in github-control referencing
+    INF-1097.
