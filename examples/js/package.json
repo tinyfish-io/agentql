@@ -24,7 +24,7 @@
     "playwright-dompath": "^0.0.7"
   },
   "overrides": {
-    "axios": ">=1.13.5",
+    "axios": ">=1.13.5 <1.14.1",
     "flatted": "^3.4.2",
     "minimatch": "^3.1.3"
   }
