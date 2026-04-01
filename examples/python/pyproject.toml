@@ -11,6 +11,7 @@ package-mode = false
 python = "^3.9"
 agentql = "*"
 openai = "^1.13.3"
+requests = ">=2.33.0"
 playwright-dompath = "^0.0.1"
 httpx = "*"
 
