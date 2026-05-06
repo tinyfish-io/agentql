@@ -1,0 +1,4 @@
+[[IgnoredVulns]]
+id = "GHSA-5239-wwwm-4pmq"
+ignoreUntil = 2026-06-23
+reason = "LOW severity (CVSS 3.3). pygments 2.19.2 is the latest release and is marked last_affected — no fix version published yet. ReDoS in AdlLexer (pygments/lexers/archetype.py) is only exploitable with attacker-controlled syntax highlighting inputs."
