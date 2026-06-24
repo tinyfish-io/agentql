@@ -14,12 +14,17 @@ openai = "^1.13.3"
 requests = ">=2.33.0"
 playwright-dompath = "^0.0.1"
 httpx = "*"
+# Security floor pins for transitive deps (PYSEC-2026-141/142, PYSEC-2026-215)
+urllib3 = ">=2.7.0"
+idna = ">=3.15"
 
 [tool.poetry.group.dev.dependencies]
 black = {version = "~=26.3.1", python = ">=3.10"}
 isort = "^5.13.2"
 pylint = "^3.1.0"
 pytest = ">=9.0.3"
+# Security floor pin for transitive dep (GHSA-5239-wwwm-4pmq)
+pygments = ">=2.20.0"
 
 [tool.black]
 line-length = 100
