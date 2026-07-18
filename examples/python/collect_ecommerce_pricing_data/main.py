@@ -106,8 +106,8 @@ async def _go_to_the_next_page(page: Page) -> bool:
             next_page_url = URL + next_page_url  # Make it a full URL
         await page.goto(next_page_url)
         return True
-    except Exception:
-        pass
+    except Exception as error:
+        print(f"Failed to navigate to the next page: {error}")
 
     return False
 
