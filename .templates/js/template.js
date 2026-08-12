@@ -26,6 +26,7 @@ async function main() {
 async function fetchData(context, sessionUrl) {
   // Create a page in a new tab in the browser context and wrap it to get access to the AgentQL's querying API
   const page = await wrap(await context.newPage());
+  // nosemgrep: javascript.playwright.security.audit.playwright-goto-injection -- template scaffold; sessionUrl is a developer-provided constant (WEBSITE_URL_1/2/3) set at scaffold time, never runtime/untrusted input.
   await page.goto(sessionUrl);
 
   // Update the query to locate the desired element on the page
