@@ -47,7 +47,7 @@ async def fetch_data(context: BrowserContext, session_url):
     response = await page.query_elements(elements_query)
     # Update to use the actual query terms to interact with the elements
     await response.search_input.type("<Replace with needed search query>")
-    await response.search_button.click()
+    await response.search_btn.click()
 
     # Update the query to fetch the desired data from the page
     data_query = """
