@@ -3,9 +3,8 @@
 import logging
 import os
 
-from playwright.sync_api import BrowserContext, sync_playwright
-
 import agentql
+from playwright.sync_api import BrowserContext, sync_playwright
 
 # Set up logging
 logging.basicConfig(level=logging.INFO)
@@ -43,7 +42,7 @@ def main():
         # Process URLs sequentially in synchronous version
         for url in WEBSITE_URLS:
             fetch_data(context, url)
-    log.info("All done! CSV is here: %s", CSV_FILE_PATH)
+    log.info(f"All done! CSV is here: {CSV_FILE_PATH}")
 
 
 def fetch_data(context: BrowserContext, session_url):
@@ -73,7 +72,7 @@ def fetch_data(context: BrowserContext, session_url):
         with open(CSV_FILE_PATH, "a", encoding="utf-8") as file:
             file.writelines(new_lines)
 
-    log.info("Fetched items from %s", session_url)
+    log.info(f"Fetched items from {session_url}")
 
 
 if __name__ == "__main__":
