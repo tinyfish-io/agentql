@@ -1,9 +1,8 @@
 import random
 import time
 
-from playwright.sync_api import ElementHandle, Page, sync_playwright
-
 import agentql
+from playwright.sync_api import ElementHandle, Page, sync_playwright
 
 
 def random_mouse_movement(page: Page):

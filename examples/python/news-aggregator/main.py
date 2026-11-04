@@ -4,9 +4,8 @@ import asyncio
 import logging
 import os
 
-from playwright.async_api import BrowserContext, async_playwright
-
 import agentql
+from playwright.async_api import BrowserContext, async_playwright
 
 # Set up logging
 logging.basicConfig(level=logging.INFO)
@@ -46,12 +45,10 @@ async def main():
         headless=True
     ) as browser, await browser.new_context() as context:
         # Open multiple tabs in the same browser context to fetch data concurrently
-        await asyncio.gather(
-            *(fetch_data(context, url) for url in WEBSITE_URLS)
-        )  
-        
-     # Update progress
-    log.info("All done! CSV is here: %s...", CSV_FILE_PATH)
+        await asyncio.gather(*(fetch_data(context, url) for url in WEBSITE_URLS))
+
+    # Update progress
+    log.info(f"All done! CSV is here: {CSV_FILE_PATH}...")
 
 
 async def fetch_data(context: BrowserContext, session_url):
@@ -82,7 +79,7 @@ async def fetch_data(context: BrowserContext, session_url):
             file.writelines(new_lines)
 
     # Update progress
-    log.info("Fetched items from %s...", session_url)
+    log.info(f"Fetched items from {session_url}...")
 
 
 if __name__ == "__main__":
