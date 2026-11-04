@@ -1,9 +1,8 @@
 import json
 import logging
 
-from playwright.sync_api import sync_playwright
-
 import agentql
+from playwright.sync_api import sync_playwright
 
 logging.basicConfig(level=logging.DEBUG)
 log = logging.getLogger(__name__)
@@ -33,7 +32,7 @@ if __name__ == "__main__":
 
             # limit the total number of books to 50
             if len(response["books"]) + len(books) > 50:
-                books.extend(response["books"][:50 - len(books)])
+                books.extend(response["books"][: 50 - len(books)])
             else:
                 books.extend(response["books"])
 
@@ -44,5 +43,5 @@ if __name__ == "__main__":
             if pagination_info.has_next_page:
                 pagination_info.navigate_to_next_page()
 
-        with open(f"./books.json", "w") as f:
+        with open("./books.json", "w", encoding="utf-8") as f:
             json.dump(books, f, indent=4)
