@@ -2,9 +2,8 @@
 
 import os
 
-from playwright.sync_api import sync_playwright
-
 import agentql
+from playwright.sync_api import sync_playwright
 
 # Set the URL to the Google Maps search for "boba tea" near Palo Alto
 URL = "https://www.google.com/maps/search/boba+tea/@37.4400289,-122.1653309,14z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MDIxMS4wIKXMDSoASAFQAw%3D%3D"
