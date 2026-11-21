@@ -1,2 +1,9 @@
 [virtualenvs]
 in-project = true
+
+# Dependency cooldown (INF-5262): Poetry >= 2.4 locks only releases at least 7 days old,
+# so a malicious release that PyPI pulls within hours never reaches poetry.lock.
+# Day-0 security fix: add the package to min-release-age-exclude, run `poetry lock`,
+# and remove the entry once the release is 7 days old.
+[solver]
+min-release-age = 7
