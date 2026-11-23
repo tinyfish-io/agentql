@@ -1,4 +1,5 @@
 [tool.poetry]
+requires-poetry = ">=2.4"
 name = "fish-tank"
 version = "0.1.0"
 description = "A warehouse for AgentQL examples and tutorials"
