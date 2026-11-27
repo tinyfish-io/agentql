@@ -1,16 +1,7 @@
 const { wrap, configure } = require('agentql');
 const { chromium } = require('playwright');
 const fs = require('fs');
-
-async function paginate(page, query, pages) {
-  const paginatedData = [];
-  for (let i = 0; i < pages; i++) {
-    const data = await page.queryData(query);
-    paginatedData.push(data);
-    await page.goto(`https://news.ycombinator.com/?p=${i + 2}`);
-  }
-  return paginatedData;
-}
+const { paginate } = require('./paginate');
 
 (async () => {
   configure({
