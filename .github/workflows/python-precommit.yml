@@ -4,7 +4,7 @@ on:
   pull_request:
     types: [opened, synchronize, reopened]
     paths:
-      - "examples/Python/**"
+      - "examples/python/**"
 
 jobs:
   python-pre-commit:
@@ -34,25 +34,26 @@ jobs:
       #  ----- install dependencies -----
       #----------------------------------------------
       - name: Install dependencies
-        working-directory: ./examples/Python
+        working-directory: ./examples/python
         run: |
           poetry install --no-interaction --no-root --with dev
 
       - name: Lint check
-        working-directory: ./examples/Python
-        run: pylint --disable=R,C application_examples examples
+        working-directory: ./examples/python
+        run: pylint --disable=R,C .
 
       - name: Code style check
-        working-directory: ./examples/Python
+        working-directory: ./examples/python
         run: black . --check
 
       - name: Imports sort check
-        working-directory: ./examples/Python
         uses: isort/isort-action@master
+        with:
+          sort-paths: examples/python
 
       - name: Static check
-        working-directory: ./examples/Python
         uses: jakebailey/pyright-action@v2
         continue-on-error: true
         with:
+          working-directory: examples/python
           pylance-version: latest-release

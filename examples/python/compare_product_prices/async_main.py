@@ -48,19 +48,17 @@ async def get_price_across_websites():
         headless=False
     ) as browser, await browser.new_context() as context:
         # Open multiple tabs in the same browser context to fetch prices concurrently
-        (bestbuy_price, ebay_price, telquest_price) = await asyncio.gather(
+        bestbuy_price, ebay_price, telquest_price = await asyncio.gather(
             fetch_price(context, BESTBUY_URL),
             fetch_price(context, EBAY_URL),
             fetch_price(context, TELQUEST_URL),
         )
 
-        print(
-            f"""
+        print(f"""
         Price at BestBuy: {bestbuy_price}
         Price at Target: {ebay_price}
         Price at Telquest: {telquest_price}
-        """
-        )
+        """)
 
 
 if __name__ == "__main__":
